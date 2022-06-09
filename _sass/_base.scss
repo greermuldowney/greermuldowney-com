@@ -1,0 +1,60 @@
+$brand-font: "Graphik", sans-serif;
+$text-font: "Graphik", sans-serif;
+
+$background-color: #fff;
+$text-color: #4c4c4c;
+$brand-color: #fc0047;
+
+$standard-line-height: 1.6;
+
+
+$minimum-side-padding: 1.5rem;
+$minimum-mobile-side-padding: .75rem;
+$max-content-width: 60rem;
+
+$title-margin: 5rem 0 2rem;
+$paragraph-left-margin: 6rem;
+$paragraph-width: 30rem;
+$paragraph-content-box-width: $paragraph-left-margin + $paragraph-width;
+
+@mixin standard-block-behavior() {
+    box-sizing: border-box;
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $minimum-side-padding;
+    padding-right: $minimum-side-padding;
+    @include breakpoint(mobile) {
+        padding-left: $minimum-mobile-side-padding;
+        padding-right: $minimum-mobile-side-padding;
+    }
+}
+
+@mixin brand-paragraph-style {
+	color: $light-text-color;
+	font-weight: 500;
+}
+
+// Base layout styles assume modern mobile form factor. Use breakpoint() to upgrade.
+// SE: 320 x 568 (@2x)
+// 6, 6s, 7, 8: 375 x 667 (@2x)
+// 6+, 6s+, 7+, 8+ : 414 x 736 (@2x)
+// 11 Pro, X, Xs: 375 x 812 (@3x)
+// 11, Xr: 414 x 896 (@2x)
+// 11 Pro Max, Xs Max: 414 x 896 (@3x)
+
+// 12.9" iPad Pro: 1024 x 1366 (@2x)
+// 11" iPad Pro: 834 x 1194 (@2x)
+// 10.5" iPad Pro: 834 x 1112 (@2x)
+// 9.7" iPad: 768 x 1024 (@2x)
+@mixin breakpoint($form_factor) {
+    @if $form_factor == tablet {
+        @media only screen and (max-width: 768px) { @content; }
+    }
+	@if $form_factor == mobile {
+		@media only screen and (max-width: 670px) { @content; }
+	}
+    @if $form_factor == tiny {
+        @media only screen and (max-width: 350px) { @content; }
+    }
+}

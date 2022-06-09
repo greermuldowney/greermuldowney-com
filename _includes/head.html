@@ -1,0 +1,53 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>
+        {%- if page.title -%}
+        {{ page.title | strip_html | smartify }} &middot; {{ site.title }}
+        {%- else -%}
+        {{ site.title }}
+        {%- endif -%}
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/site/main.css' | relative_url }}">
+    {%- if layout.custom-css -%}
+        {%- if layout.custom-css[0] -%}
+            {%- for css in layout.custom-css -%}
+            <link rel="stylesheet" href="{{ '/assets/site/' | append: css | append: '.css' | relative_url }}">
+            {%- endfor -%}
+        {%- else -%}
+            <link rel="stylesheet" href="{{ '/assets/site/' | append: layout.custom-css | append: '.css' | relative_url }}">
+        {%- endif -%}
+    {%- endif -%}
+    {%- if page.custom-css -%}
+        {%- if page.custom-css[0] -%}
+            {%- for css in page.custom-css -%}
+                <link rel="stylesheet" href="{{ '/assets/site/' | append: css | append: '.css' | relative_url }}">
+            {%- endfor -%}
+        {%- else -%}
+            <link rel="stylesheet" href="{{ '/assets/site/' | append: page.custom-css | append: '.css' | relative_url }}">
+        {%- endif -%}
+    {%- endif -%}
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png?v=1' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png?v=1' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png?v=1' | relative_url }}">
+    <link rel="manifest" href="{{ '/assets/favicon/manifest.json?v=1' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/assets/favicon/safari-pinned-tab.svg?v=1' | relative_url }}" color="#08327d">
+    <meta name="theme-color" content="#f00">
+
+    {%- if page.custom-js -%}
+        {%- if page.custom-js[0] -%}
+            {%- for js in page.custom-js -%}
+            <script src="{{ '/assets/site/' | append: js | append: '.js' | relative_url }}"></script>
+            {%- endfor -%}
+        {%- else -%}
+            <script src="{{ '/assets/site/' | append: page.custom-js | append: '.js' | relative_url }}"></script>
+        {%- endif -%}
+    {%- endif -%}
+</head>

@@ -1,0 +1,107 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+@font-face { font-family: "Graphik"; font-weight: 100; src: url({{ "/assets/fonts/GraphikThin.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 200; src: url({{ "/assets/fonts/GraphikExtralight.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 300; src: url({{ "/assets/fonts/GraphikLight.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 400; src: url({{ "/assets/fonts/GraphikRegular.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 500; src: url({{ "/assets/fonts/GraphikMedium.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 600; src: url({{ "/assets/fonts/GraphikSemibold.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 700; src: url({{ "/assets/fonts/GraphikBold.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 800; src: url({{ "/assets/fonts/GraphikBlack.otf" | relative_url }}) format("opentype"); }
+@font-face { font-family: "Graphik"; font-weight: 900; src: url({{ "/assets/fonts/GraphikSuper.otf" | relative_url }}) format("opentype"); }
+
+// RESET
+* { box-sizing: border-box; }
+
+body {
+	font-family: $text-font;
+    color: $text-color;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: $standard-line-height;
+}
+
+a {
+    &:link, &:visited, &:active {
+        color: $text-color;
+    }
+    &:hover {
+    	color: $brand-color;
+    }
+    text-decoration: none;
+}
+
+// LAYOUT
+body {
+	display: grid;
+	grid-template-rows: [top] auto [main] 1fr [footer-start] auto [end];
+	grid-template-columns: [left] auto [main] 1fr [end];
+	gap: 2rem 2rem;
+	margin: 8px;
+}
+header {
+	grid-area: top / left / main / end;
+}
+nav {
+	grid-area: main / left / footer-start / main;
+
+	div {
+	}
+}
+footer {
+	grid-area: footer-start / left / end / main;
+}
+main {
+	grid-area: main / main / end / end;
+	> p:first-child {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	> p:last-child {
+		margin-bottom: 0;
+		padding-bottom: .1em;
+	}
+	p {
+		max-width: 30em;
+	}
+}
+
+// STYLE
+body {
+}
+header {
+	> a {
+		display: block;
+		color: $text-color;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 2em;
+		letter-spacing: .02em;
+		line-height: 1.2;
+	}
+	h1 {
+		display: inline;
+		color: $brand-color;
+		font-size: 1em;
+		font-weight: 600;
+	}
+}
+nav {
+}
+nav, footer {
+	$font-reduction: .8;
+	font-size: #{$font-reduction}em;
+	line-height: #{$standard-line-height / $font-reduction};
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+.cv #header-cv a,
+.bio #header-bio a,
+.contact #header-contact a {
+	color: $brand-color;
+}
