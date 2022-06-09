@@ -95,6 +95,14 @@ main {
     p {
         max-width: 30em;
     }
+    a {
+        text-decoration: underline;
+        text-decoration-color: $text-color;
+        text-underline-offset: .2em;
+        &:hover {
+            text-decoration-color: $brand-color;
+        }
+    }
 }
 
 body.post-curatorial, body.post-photography {

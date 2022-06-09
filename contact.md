@@ -1,5 +1,4 @@
 ---
-custom-css: contact
 body-class: contact
 ---
 
@@ -11,4 +10,4 @@ formspree form
 
 Prints are available courtesy of Gallery Kayafas.
 
-Please contact [Arlette Kayafas](mailto:arlette@gallerykayafas.com){:.mail} for editioning and print information.
+Please contact [Arlette Kayafas](mailto:arlette@gallerykayafas.com) for editioning and print information.
