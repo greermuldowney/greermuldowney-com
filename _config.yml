@@ -29,9 +29,24 @@ twitter_username: GreerMuldowney
 linkedin_username: greer-muldowney-b92ab323
 instagram_username: greerest
 
+permalink: none
+
 # Build settings
 plugins:
   - jekyll-feed
+
+# Defaults
+defaults:
+  - scope:
+      path: "photography"
+      type: "posts"
+    values:
+      layout: "post-photography"
+  - scope:
+      path: "curatorial"
+      type: "posts"
+    values:
+      layout: "post-curatorial"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

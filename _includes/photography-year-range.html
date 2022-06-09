@@ -1,0 +1,11 @@
+{%- if include.post.end-date -%}
+    {%- assign start-year = include.post.date | date: "%Y" -%}
+    {%- assign end-year = include.post.end-date | date: "%Y" -%}
+    {%- if start-year == end-year -%}
+        {{- include.post.date | date: "%Y" -}}
+    {%- else -%}
+        {{- include.post.date | date: "%Y" }}–{{ include.post.end-date | date: "%Y" -}}
+    {%- endif -%}
+{%- else -%}
+    {{- include.post.date | date: "%Y" -}}–
+{%- endif -%}

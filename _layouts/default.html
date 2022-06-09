@@ -3,7 +3,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 {%- include head.html -%}
-<body {% if layout.body-class or page.body-class %}class="{{ layout.body-class }} {{ page.body-class }}"{% endif %}>
+<body class="
+{%- if layout.body-class or page.body-class -%}
+    {{ layout.body-class }} {{ page.body-class }}
+{%- endif -%}
+{%- if page.categories -%}
+    {{ page.categories }} {{ page.categories }}-{{ page.title | slugify }}
+{%- endif -%}
+    ">
     {%- include header.html -%}
     <main>
         {{ content }}

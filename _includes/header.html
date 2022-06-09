@@ -1,10 +1,27 @@
 <header>
-  <a href="{% link index.md %}"><h1>Greer Muldowney</h1> likes photography</a>
+    <a href="{% link index.md %}"><h1>Greer Muldowney</h1> likes photography</a>
 </header>
 <nav>
-  <div id="header-photography"><a href="{% link photography/index.html %}">Photography</a></div>
-  <div id="header-curatorial"><a href="{% link curatorial/index.html %}">Curatorial & Projects</a></div>
-  <div id="header-cv"><a href="{% link cv.md %}">Curriculum Vitae</a></div>
-  <div id="header-bio"><a href="{% link bio.md %}">Bio</a></div>
-  <div id="header-contact"><a href="{% link contact.md %}">Contact</a></div>
+    <div id="header-photography"><a href="{% link photography/index.html %}">Photography</a></div>
+    <div id="items-photography">
+        {% for post in site.categories.photography -%}
+            {%- if post.end-date == null -%}
+        <div class="photography-{{ post.title | slugify }}"><a href="{{ post.url }}">{{ post.title }}</a><div>{% include photography-year-range.html post=post %}</div></div>
+            {%- endif -%}
+        {%- endfor %}
+        {% for post in site.categories.photography -%}
+            {%- if post.end-date != null -%}
+        <div class="photography-{{ post.title | slugify }}"><a href="{{ post.url }}">{{ post.title }}</a><div>{% include photography-year-range.html post=post %}</div></div>
+            {%- endif -%}
+        {%- endfor %}
+    </div>
+    <div id="header-curatorial"><a href="{% link curatorial/index.md %}">Curatorial & Projects</a></div>
+    <div id="items-curatorial">
+        {% for post in site.categories.curatorial -%}
+        <div class="curatorial-{{ post.title | slugify }}"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        {%- endfor %}
+    </div>
+    <div id="header-cv"><a href="{% link cv.md %}">Curriculum Vitae</a></div>
+    <div id="header-bio"><a href="{% link bio.md %}">Bio</a></div>
+    <div id="header-contact"><a href="{% link contact.md %}">Contact</a></div>
 </nav>

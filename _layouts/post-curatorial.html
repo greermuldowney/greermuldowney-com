@@ -1,0 +1,42 @@
+---
+layout: default
+custom-css: curatorial
+---
+
+<h1>{{ page.title }}</h1>
+
+{%- if page.subtitle %}
+<h2> {{ page.subtitle }}</h2>
+{%- endif %}
+
+<h3>{{ page.location }}</h3>
+
+<h3>
+{%- if page.end-date -%}
+    {% assign start-year = page.date | date: "%Y" %}
+    {% assign end-year = page.end-date | date: "%Y" %}
+    {% if start-year != end-year %}
+        {{ page.date | date: "%B %e, %Y" }}–{{ page.end-date | date: "%B %e, %Y" }}
+    {% else %}
+        {% assign start-month = page.date | date: "%m" %}
+        {% assign end-month = page.end-date | date: "%m" %}
+        {% if start-month != end-month %}
+            {{ page.date | date: "%B %e" }}–{{ page.end-date | date: "%B %e, %Y" }}
+        {% else %}
+            {{ page.date | date: "%B %e" }}–{{ page.end-date | date: "%e, %Y" }}
+        {% endif %}
+    {% endif %}
+{%- else -%}
+    {{ page.date | date: "%B %e, %Y" }}
+{%- endif %}
+</h3>
+
+{{ page.content }}
+
+{%- if page.participants %}
+<h3>{{ page.participants.what-are-they-called }}</h3>
+
+<div class="participants">
+{{ page.participants.who-are-they | join: " • " }}
+</div>
+{%- endif %}

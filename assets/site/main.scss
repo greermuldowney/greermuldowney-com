@@ -35,11 +35,28 @@ a {
     text-decoration: none;
 }
 
+h1, h2 {
+    font-weight: 600;
+    line-height: $compact-line-height;
+}
+h3 {
+    font-weight: 500;
+    line-height: $compact-line-height;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    + p {
+        margin-top: 0;
+    }
+}
+
 // LAYOUT
 body {
     display: grid;
     grid-template-rows: [top] auto [main] 1fr [footer-start] auto [end];
-    grid-template-columns: [left] auto [main] 1fr [end];
+    grid-template-columns: [left] 12rem [main] 1fr [end];
     gap: 2rem 2rem;
     margin: 8px;
 }
@@ -48,20 +65,17 @@ header {
 }
 nav {
     grid-area: main / left / footer-start / main;
-
-    div {
-    }
 }
 footer {
     grid-area: footer-start / left / end / main;
 }
 main {
     grid-area: main / main / end / end;
-    > p:first-child {
+    > :first-child {
         margin-top: 0;
         padding-top: 0;
     }
-    > p:last-child {
+    > :last-child {
         margin-bottom: 0;
         padding-bottom: 0;
     }
@@ -79,25 +93,63 @@ header {
         font-weight: 600;
         font-size: 2em;
         letter-spacing: .02em;
-        line-height: 1.2;
+        line-height: $compact-line-height;
     }
     h1 {
         display: inline;
         color: $brand-color;
         font-size: 1em;
-        font-weight: 600;
     }
 }
 nav, footer {
-    $font-reduction: .8;
-    font-size: #{$font-reduction}em;
-    line-height: #{$standard-line-height / $font-reduction};
-    text-transform: uppercase;
+    font-size: .8em;
     letter-spacing: .05em;
+    margin-top: .6em;
+    line-height: $compact-line-height;
+
+    > div {
+        margin-bottom: .8em;
+        div {
+            margin-left: 1em;
+            max-width: 15em;
+            margin-bottom: .6em;
+        }
+        > a {
+            text-transform: uppercase;
+        }
+    }
+}
+sup {
+    // With this we avoid adding extra line height to "km^2"
+    line-height: 0;
 }
 
+.photography #header-photography a,
+.curatorial #header-curatorial a,
 .cv #header-cv a,
 .bio #header-bio a,
 .contact #header-contact a {
     color: $brand-color;
+}
+#items-photography,
+#items-curatorial {
+    display: none;
+}
+.photography #items-photography,
+.curatorial #items-curatorial {
+    display: block;
+}
+
+{% for category in site.categories %}
+    {% assign category_name = category[0] %}
+    {%- for post in category[1] -%}
+.{{ category_name }}-{{ post.title | slugify }} .{{ category_name }}-{{ post.title | slugify }} a { color: $brand-color; }
+    {%- endfor -%}
+{% endfor %}
+
+// MAIN
+main {
+    h1 {
+
+    }
 }
