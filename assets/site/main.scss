@@ -17,12 +17,12 @@
 * { box-sizing: border-box; }
 
 body {
-	font-family: $text-font;
+    font-family: $text-font;
     color: $text-color;
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	line-height: $standard-line-height;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: $standard-line-height;
 }
 
 a {
@@ -30,74 +30,74 @@ a {
         color: $text-color;
     }
     &:hover {
-    	color: $brand-color;
+        color: $brand-color;
     }
     text-decoration: none;
 }
 
 // LAYOUT
 body {
-	display: grid;
-	grid-template-rows: [top] auto [main] 1fr [footer-start] auto [end];
-	grid-template-columns: [left] auto [main] 1fr [end];
-	gap: 2rem 2rem;
-	margin: 8px;
+    display: grid;
+    grid-template-rows: [top] auto [main] 1fr [footer-start] auto [end];
+    grid-template-columns: [left] auto [main] 1fr [end];
+    gap: 2rem 2rem;
+    margin: 8px;
 }
 header {
-	grid-area: top / left / main / end;
+    grid-area: top / left / main / end;
 }
 nav {
-	grid-area: main / left / footer-start / main;
+    grid-area: main / left / footer-start / main;
 
-	div {
-	}
+    div {
+    }
 }
 footer {
-	grid-area: footer-start / left / end / main;
+    grid-area: footer-start / left / end / main;
 }
 main {
-	grid-area: main / main / end / end;
-	> p:first-child {
-		margin-top: 0;
-		padding-top: 0;
-	}
-	> p:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
-	p {
-		max-width: 30em;
-	}
+    grid-area: main / main / end / end;
+    > p:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    > p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    p {
+        max-width: 30em;
+    }
 }
 
 // STYLE
 header {
-	> a {
-		display: block;
-		color: $text-color;
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 2em;
-		letter-spacing: .02em;
-		line-height: 1.2;
-	}
-	h1 {
-		display: inline;
-		color: $brand-color;
-		font-size: 1em;
-		font-weight: 600;
-	}
+    > a {
+        display: block;
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2em;
+        letter-spacing: .02em;
+        line-height: 1.2;
+    }
+    h1 {
+        display: inline;
+        color: $brand-color;
+        font-size: 1em;
+        font-weight: 600;
+    }
 }
 nav, footer {
-	$font-reduction: .8;
-	font-size: #{$font-reduction}em;
-	line-height: #{$standard-line-height / $font-reduction};
-	text-transform: uppercase;
-	letter-spacing: .05em;
+    $font-reduction: .8;
+    font-size: #{$font-reduction}em;
+    line-height: #{$standard-line-height / $font-reduction};
+    text-transform: uppercase;
+    letter-spacing: .05em;
 }
 
 .cv #header-cv a,
 .bio #header-bio a,
 .contact #header-contact a {
-	color: $brand-color;
+    color: $brand-color;
 }

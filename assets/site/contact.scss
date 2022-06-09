@@ -4,10 +4,10 @@
 @import "base";
 
 a.mail {
-	text-decoration: underline;
-	text-decoration-color: $text-color;
-	text-underline-offset: .2em;
-	&:hover {
-		text-decoration-color: $brand-color;
-	}
+    text-decoration: underline;
+    text-decoration-color: $text-color;
+    text-underline-offset: .2em;
+    &:hover {
+        text-decoration-color: $brand-color;
+    }
 }
