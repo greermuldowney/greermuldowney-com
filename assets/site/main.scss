@@ -63,7 +63,7 @@ main {
 	}
 	> p:last-child {
 		margin-bottom: 0;
-		padding-bottom: .1em;
+		padding-bottom: 0;
 	}
 	p {
 		max-width: 30em;
@@ -71,8 +71,6 @@ main {
 }
 
 // STYLE
-body {
-}
 header {
 	> a {
 		display: block;
@@ -89,8 +87,6 @@ header {
 		font-size: 1em;
 		font-weight: 600;
 	}
-}
-nav {
 }
 nav, footer {
 	$font-reduction: .8;
