@@ -8,7 +8,7 @@
     {{ layout.body-class }} {{ page.body-class }}
 {%- endif -%}
 {%- if page.categories -%}
-    {{ page.categories }} {{ page.categories }}-{{ page.title | slugify }}
+    {{ page.categories }}-{{ page.title | slugify }}
 {%- endif -%}
     ">
     {%- include header.html -%}

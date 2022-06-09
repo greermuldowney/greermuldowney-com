@@ -55,22 +55,35 @@ h1, h2, h3, h4, h5, h6 {
 // LAYOUT
 body {
     display: grid;
-    grid-template-rows: [top] auto [main] 1fr [footer-start] auto [end];
-    grid-template-columns: [left] 12rem [main] 1fr [end];
+    grid-template-rows: [top] auto [main] 1fr [footer-start] auto [bottom];
+    grid-template-columns: [left] 12rem [main] 1fr [right];
+    @include breakpoint(mobile) {
+        grid-template-rows: [top] auto [main] 1fr [nav] auto [footer-start] auto [bottom];
+        grid-template-columns: [left] 1fr [right];
+    }
     gap: 2rem 2rem;
     margin: 8px;
 }
 header {
-    grid-area: top / left / main / end;
+    grid-area: top / left / main / right;
 }
 nav {
     grid-area: main / left / footer-start / main;
+    @include breakpoint(mobile) {
+        grid-area: nav / left / footer-start / right;
+    }
 }
 footer {
-    grid-area: footer-start / left / end / main;
+    grid-area: footer-start / left / bottom / main;
+    @include breakpoint(mobile) {
+        grid-area: footer-start / left / bottom / right;
+    }
 }
 main {
-    grid-area: main / main / end / end;
+    grid-area: main / main / bottom / right;
+    @include breakpoint(mobile) {
+        grid-area: main / left / nav / right;
+    }
     > :first-child {
         margin-top: 0;
         padding-top: 0;
@@ -83,6 +96,23 @@ main {
         max-width: 30em;
     }
 }
+
+body.post-curatorial, body.post-photography {
+    header {
+        grid-area: top / left / main / main;
+        @include breakpoint(mobile) {
+            grid-area: top / left / main / right;
+        }
+    }
+    main {
+        grid-area: top / main / bottom / right;
+        @include breakpoint(mobile) {
+            grid-area: main / left / nav / right;
+        }
+    }
+}
+
+
 
 // STYLE
 header {

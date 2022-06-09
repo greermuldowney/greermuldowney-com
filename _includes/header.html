@@ -1,5 +1,9 @@
 <header>
+    {% if page.layout == "post-photography" or page.layout == "post-curatorial" %}
+    <a href="{% link index.md %}"><h1>GM</h1>lp</a>
+    {% else %}
     <a href="{% link index.md %}"><h1>Greer Muldowney</h1> likes photography</a>
+    {% endif %}
 </header>
 <nav>
     <div id="header-photography"><a href="{% link photography/index.html %}">Photography</a></div>
