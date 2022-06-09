@@ -3,6 +3,6 @@ layout: default
 body-class: photography post-photography
 ---
 
-<h1>{{ page.title }} ({% include photography-year-range.html post=page %})</h1>
+<h1>{{ page.title | smartify }} ({% include photography-year-range.html post=page %})</h1>
 
 {{ page.content }}

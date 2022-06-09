@@ -4,13 +4,13 @@ body-class: curatorial post-curatorial
 custom-css: curatorial
 ---
 
-<h1>{{ page.title }}</h1>
+<h1>{{ page.title | smartify }}</h1>
 
 {%- if page.subtitle %}
-<h2> {{ page.subtitle }}</h2>
+<h2> {{ page.subtitle | smartify }}</h2>
 {%- endif %}
 
-<h3>{{ page.location }}</h3>
+<h3>{{ page.location | smartify }}</h3>
 
 <h3>
 {%- if page.end-date -%}
@@ -35,9 +35,9 @@ custom-css: curatorial
 {{ page.content }}
 
 {%- if page.participants %}
-<h3>{{ page.participants.what-are-they-called }}</h3>
+<h3>{{ page.participants.what-are-they-called | smartify }}</h3>
 
 <div class="participants">
-{{ page.participants.who-are-they | join: " • " }}
+{{ page.participants.who-are-they | join: " • " | smartify }}
 </div>
 {%- endif %}
