@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     display: grid;
     grid-template-rows: [top] auto [main] 1fr [footer-start] auto [bottom];
-    grid-template-columns: [left] 12rem [main] 1fr [right];
+    grid-template-columns: [left] 12rem [main] auto [right];
     @include breakpoint(mobile) {
         grid-template-rows: [top] auto [main] 1fr [nav] auto [footer-start] auto [bottom];
         grid-template-columns: [left] 1fr [right];
@@ -65,8 +65,12 @@ body {
     margin: 8px;
 }
 header {
-    grid-area: top / left / main / right;
+    grid-area: top / left / main / main;
+    @include breakpoint(mobile) {
+        grid-area: top / left / main / right;
+    }
 }
+
 nav {
     grid-area: main / left / footer-start / main;
     @include breakpoint(mobile) {
@@ -80,10 +84,11 @@ footer {
     }
 }
 main {
-    grid-area: main / main / bottom / right;
+    grid-area: top / main / bottom / right;
     @include breakpoint(mobile) {
         grid-area: main / left / nav / right;
     }
+
     > :first-child {
         margin-top: 0;
         padding-top: 0;
@@ -105,15 +110,14 @@ main {
     }
 }
 
-body.post-curatorial, body.post-photography {
+body.home {
+
     header {
-        grid-area: top / left / main / main;
-        @include breakpoint(mobile) {
-            grid-area: top / left / main / right;
-        }
+        grid-area: top / left / main / right;
     }
+
     main {
-        grid-area: top / main / bottom / right;
+        grid-area: main / main / bottom / right;
         @include breakpoint(mobile) {
             grid-area: main / left / nav / right;
         }
@@ -129,7 +133,7 @@ header {
         color: $text-color;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 2em;
+        font-size: 1em;
         letter-spacing: .02em;
         line-height: $compact-line-height;
     }
@@ -139,6 +143,7 @@ header {
         font-size: 1em;
     }
 }
+.home header > a { font-size: 2em; }
 nav, footer {
     font-size: .8em;
     letter-spacing: .05em;
@@ -157,7 +162,7 @@ nav, footer {
         }
     }
 }
-sup {
+nav sup {
     // With this we avoid adding extra line height to "km^2"
     line-height: 0;
 }

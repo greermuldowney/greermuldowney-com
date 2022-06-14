@@ -24,6 +24,13 @@ participants:
         - Sara Salazar, Hampshire College
         - Kelsey Whitaker, NESOP
         - Yulin Wu, University of Massachusetts Dartmouth
+photo-directory-prefix: undergraduate-photography-now/
+photos:
+    - filename: FFF15-Evite-UPN5.jpg
+    - filename: IMG_2341 copy.jpg
+    - filename: IMG_2342 copy.jpg
+    - filename: IMG_2345 copy.jpg
+    - filename: IMG_2346 copy.jpg
 ---
 
 The Flash Forward Festival is pleased to be hosting its third annual undergraduate exhibition. This cross section of talent represent some of the best college Juniors and Seniors enrolled in a college photography program in any of the New England States: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, or Vermont, during the 2014–2015 academic year. All formats and categories of photography were accepted to highlight the vast talents of these future photography professionals and artists. The work will be on display during the festival and for the month of May at 530 Harrison Ave, hosted by GTI Properties in the heart of SoWa, Boston’s Gallery district. This exhibition was juried by Lou Jones and Greer Muldowney on behalf of the Flash Forward Festival.

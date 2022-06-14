@@ -1,8 +1,14 @@
 ---
 layout: default
 body-class: curatorial post-curatorial
-custom-css: curatorial
+custom-css:
+    - post-curatorial
+    - post-photography
 ---
+
+
+<div id="slideshow">
+    <div id="content">
 
 <h1>{{ page.title | smartify }}</h1>
 
@@ -41,3 +47,13 @@ custom-css: curatorial
 {{ page.participants.who-are-they | join: " • " | smartify }}
 </div>
 {%- endif %}
+
+    </div>
+
+{% for photo in page.photos -%}
+    <div>
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" loading="lazy" />
+    </div>
+{%- endfor %}
+
+</div>

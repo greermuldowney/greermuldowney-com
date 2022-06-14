@@ -13,6 +13,18 @@ participants:
         - Jonathan Gitelson
         - Angela Mittiga
         - Anastasia Samoylova
+photo-directory-prefix: landscape-as-fetish/
+photos:
+    - filename: The_Actual_Globe.jpg
+    - filename: IMG_2510.jpg
+    - filename: IMG_2542.jpg
+    - filename: IMG_2544.jpg
+    - filename: IMG_2546.jpg
+    - filename: IMG_2559.jpg
+    - filename: IMG_2570.jpg
+    - filename: IMG_2573.jpg
+    - filename: IMG_2580.jpg
+    - filename: IMG_2594.jpg
 ---
 Gallery Kayafas is pleased to present LANDSCAPE AS FETISH, a group exhibit curated by Greer Muldowney. Muldowney has selected seven artists where the landscape is an integral part of their work: Timothy Briner, Jesse Burke, Christine Collins, Mark Dorf, Jonathan Gitelson, Angela Mittiga, and Anastasia Samoylova.
 

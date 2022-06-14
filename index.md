@@ -1,4 +1,5 @@
 ---
+body-class: home
 ---
 
 

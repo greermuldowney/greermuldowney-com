@@ -31,8 +31,8 @@ $paragraph-content-box-width: $paragraph-left-margin + $paragraph-width;
 }
 
 @mixin brand-paragraph-style {
-	color: $light-text-color;
-	font-weight: 500;
+    color: $light-text-color;
+    font-weight: 500;
 }
 
 // Base layout styles assume modern mobile form factor. Use breakpoint() to upgrade.
@@ -51,9 +51,9 @@ $paragraph-content-box-width: $paragraph-left-margin + $paragraph-width;
     @if $form_factor == tablet {
         @media only screen and (max-width: 768px) { @content; }
     }
-	@if $form_factor == mobile {
-		@media only screen and (max-width: 670px) { @content; }
-	}
+    @if $form_factor == mobile {
+        @media only screen and (max-width: 670px) { @content; }
+    }
     @if $form_factor == tiny {
         @media only screen and (max-width: 350px) { @content; }
     }

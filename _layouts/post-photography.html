@@ -1,8 +1,20 @@
 ---
 layout: default
 body-class: photography post-photography
+custom-css: post-photography
 ---
 
+<div id="slideshow">
+    <div id="content">
 <h1>{{ page.title | smartify }} ({% include photography-year-range.html post=page %})</h1>
 
 {{ page.content }}
+    </div>
+
+{% for photo in page.photos -%}
+    <div>
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" loading="lazy" />
+    </div>
+{%- endfor %}
+
+</div>
