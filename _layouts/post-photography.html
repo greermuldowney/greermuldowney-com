@@ -13,7 +13,7 @@ custom-css: post-photography
 
 {% for photo in page.photos -%}
     <div>
-        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" loading="lazy" />
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" />
     </div>
 {%- endfor %}
 
