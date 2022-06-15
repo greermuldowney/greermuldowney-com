@@ -69,9 +69,15 @@ main {
     }
 }
 
-.photography-monetary-violence #slideshow > div {
+.photography-monetary-violence #slideshow {
     @include breakpoint(mobile) {
-        height: auto;
-        max-height: 100vh;
+        > div {
+            height: auto;
+        }
+        img {
+            height: auto;
+            max-height: 100vh;
+        }
     }
+
 }
