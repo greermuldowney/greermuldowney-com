@@ -125,7 +125,7 @@ Magenta Foundation
 Fall 2011–2017
 
 * Gallery procurement, marketing and execution of photographic exhibitions for Flash Forward Festival 2012–15
-* Curator and host for portfolio walk and programming for "Undergraduate Photography Now" 2013–15
+* Curator and host for portfolio walk and programming for "Undergraduate Photography Now!" 2013–15
 * Coordinator of 40 student volunteers at Festivals' several gallery and lecture locations.
 
 SMFA Medici Committee  

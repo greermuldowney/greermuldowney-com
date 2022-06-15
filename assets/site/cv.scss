@@ -53,6 +53,7 @@ main {
     .experience {
         display: grid;
         grid-template-columns: auto auto;
+        column-gap: 2em;
 
         p {
             max-width: initial;
