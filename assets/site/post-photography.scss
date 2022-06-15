@@ -29,7 +29,6 @@ main {
         overflow-x: initial;
         scroll-snap-type: none;
         flex-direction: column;
-        row-gap: $minimum-side-padding;
     }
 
     > * {
@@ -39,6 +38,8 @@ main {
         padding-right: $minimum-side-padding;
         @include breakpoint(mobile) {
             padding-right: 0;
+            padding-top: $minimum-mobile-side-padding;
+            padding-bottom: $minimum-mobile-side-padding;
         }
     }
 
@@ -55,19 +56,16 @@ main {
         }
     }
 
-    div {
+    > div {
         width: 100%;
         height: 100%;
-        @include breakpoint(mobile) {
-            height: 100vh;
-        }
     }
 
     img {
         width: 100%;
         height: 100%;
         @include breakpoint(mobile) {
-            height: 100vh;
+            height: calc(100vh - #{2 * $minimum-mobile-side-padding});
         }
         object-fit: contain;
         display: block;
@@ -81,7 +79,7 @@ main {
         }
         img {
             height: auto;
-            max-height: 100vh;
+            max-height: calc(100vh - #{2 * $minimum-mobile-side-padding});
         }
     }
 
