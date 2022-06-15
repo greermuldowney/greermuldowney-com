@@ -20,15 +20,15 @@ main {
 
 #slideshow {
     display: flex;
+
     height: 100%;
-    
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     @include breakpoint(mobile) {
+        height: auto;
         overflow-x: initial;
         scroll-snap-type: none;
         flex-direction: column;
-        height: auto;
         row-gap: $minimum-side-padding;
     }
 
