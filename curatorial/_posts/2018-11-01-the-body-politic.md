@@ -12,9 +12,9 @@ participants:
         - Brian Ulrich
 photo-directory-prefix: the-body-politic/
 photos:
-    - filename: Area Gallery_15.jpg
-    - filename: Area Gallery_13.jpg
-    - filename: Area Gallery_1.jpg
+    - filename: Area Gallery_15-compressed.jpg
+    - filename: Area Gallery_13-compressed.jpg
+    - filename: Area Gallery_1-compressed.jpg
     - filename: BodyPolitic-01.png
 ---
 
