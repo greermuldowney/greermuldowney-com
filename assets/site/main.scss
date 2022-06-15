@@ -19,10 +19,18 @@
 body {
     font-family: $text-font;
     color: $text-color;
-    margin: 0;
     padding: 0;
-    font-size: 18px;
     line-height: $standard-line-height;
+
+    font-size: 18px;
+    @include breakpoint(tablet) {
+        font-size: 16px;
+    }
+
+    margin: $minimum-side-padding;
+    @include breakpoint(mobile) {
+        margin: $minimum-mobile-side-padding;
+    }
 }
 
 a {
@@ -61,8 +69,7 @@ body {
         grid-template-rows: [top] auto [main] 1fr [nav] auto [footer-start] auto [bottom];
         grid-template-columns: [left] 1fr [right];
     }
-    gap: 2rem 2rem;
-    margin: 8px;
+    gap: $minimum-side-padding;
 }
 header {
     grid-area: top / left / main / main;

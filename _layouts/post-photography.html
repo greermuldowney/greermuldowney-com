@@ -5,11 +5,11 @@ custom-css: post-photography
 ---
 
 <div id="slideshow">
-    <div id="content">
+    <article>
 <h1>{{ page.title | smartify }} ({% include photography-year-range.html post=page %})</h1>
 
 {{ page.content }}
-    </div>
+    </article>
 
 {% for photo in page.photos -%}
     <div>
