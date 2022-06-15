@@ -37,7 +37,6 @@ main {
         display: grid;
         grid-template-columns: 7em 1fr;
         grid-auto-flow: dense;
-        column-gap: 2em;
 
         dt {
             grid-column: 2;
@@ -51,7 +50,7 @@ main {
         }
     }
 
-    #teachingContents {
+    .experience {
         display: grid;
         grid-template-columns: auto auto;
 

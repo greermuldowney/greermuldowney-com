@@ -33,12 +33,12 @@ This CV is also available as a _PDF_. For further inquiries, please [contact me]
 # TEACHING EXPERIENCE
 {:#teaching}
 
-<div id="teachingContents" markdown="1">
+<div class="experience" markdown="1">
 Visiting Assistant Professor of Photography  
 Boston, Massachusetts
 
 Boston College  
-Fall 2013-Present
+Fall 2013–Present
 
 - Intermediate Photography I & II
 - Introduction to Digital Photography
@@ -60,7 +60,7 @@ Lecturer in Photography
 Boston, Massachusetts
 
 Boston University  
-Fall 2014-Present
+Fall 2014–Present
 
 - Introduction to analogue photography and Darkroom processes
 - Introduction to digital photography, printing and critique techniques
@@ -78,7 +78,7 @@ Mentor Faculty
 Boston, Massachusetts
 
 Master of Fine Arts Low Residency at Lesley University College of Art & Design  
-Winter 2015-Present
+Winter 2015–Present
 
 - Faculty Mentor for Low Residency MFA Candidate for 3rd semester practice
 - Critique intensives and professional progress reports revolving around studio work
@@ -87,7 +87,7 @@ Adjunct Photography Professor
 Manchester, New Hampshire
 
 New Hampshire Institute of Art  
-Fall 2011-Spring 2013
+Fall 2011–Spring 2013
 
 - Team teaching a Materials and Processes Course to beginning students
 - Introduction to analogue photography and Darkroom processes
@@ -96,7 +96,7 @@ Adjunct Professor of Photography
 Brookline, Massachusetts
 
 New England Institute of Art  
-Fall 2011-Fall 2014
+Fall 2011–Fall 2014
 
 - Teaching Concept Development and Theory courses to advanced photography students
 - Teaching Photography History and Media Studies to photography students
@@ -108,62 +108,87 @@ Fall 2011-Fall 2014
 # Professional Experience
 {:#professional}
 
-Founder and Curator of Undergraduate Photography Now!
+<div class="experience" markdown="1">
+Founder and Curator of Undergraduate Photography Now!  
 Boston, Massachusetts
-2012- Present 
-An exhibition and portfolio review event designed for New England’s Photography Student
-This annual call for artists is designed to give students their first professional art experience
-Find co-curator, volunteers, venue for both the exhibition and portfolio walk, promotions, and installation of exhibition
-Regional Coordinator
+
+2012–Present 
+
+* An exhibition and portfolio review event designed for New England’s Photography Student
+* This annual call for artists is designed to give students their first professional art experience
+* Find co-curator, volunteers, venue for both the exhibition and portfolio walk, promotions, and installation of exhibition
+
+Regional Coordinator  
 Boston, Massachusetts
-Magenta Foundation
-Fall 2011-2017
-Gallery procurement, marketing and execution of photographic exhibitions for Flash Forward Festival 2012-15
-Curator and host for portfolio walk and programming for "Undergraduate Photography Now" 2013-15
-Coordinator of 40 student volunteers at Festivals' several gallery and lecture locations.
-SMFA Medici Committee
+
+Magenta Foundation  
+Fall 2011–2017
+
+* Gallery procurement, marketing and execution of photographic exhibitions for Flash Forward Festival 2012–15
+* Curator and host for portfolio walk and programming for "Undergraduate Photography Now" 2013–15
+* Coordinator of 40 student volunteers at Festivals' several gallery and lecture locations.
+
+SMFA Medici Committee  
 Boston, Massachusetts
-School of the Museum of Fine Arts
-Fall 2015-Present
-Assist in encouraging present students and previously related artists to partipate in the art sale.
-Encourage the community to partipicate in the art sale, who’s proceeds to go scholarships for SMFA students.
-Director on the Board of Directors
+
+School of the Museum of Fine Arts  
+Fall 2015–Present
+
+* Assist in encouraging present students and previously related artists to partipate in the art sale.
+* Encourage the community to partipicate in the art sale, who’s proceeds to go scholarships for SMFA students.
+
+Director on the Board of Directors  
 Winchester, Massachusetts
-Griffin Museum of Photography
-Fall 2013-Present
-Serve in an advisory position on the museum's board
-Serve on the selection and planning committee for annual Focus Awards
-Perform portfolio reviews for museum members when requested
-Foster community and artist relations for museum events
-Digital Technologist and Master Printer
+
+Griffin Museum of Photography  
+Fall 2013–Present
+
+* Serve in an advisory position on the museum's board
+* Serve on the selection and planning committee for annual Focus Awards
+* Perform portfolio reviews for museum members when requested
+* Foster community and artist relations for museum events
+
+Digital Technologist and Master Printer  
 Rockland, Massachusetts
-Panopticon Imaging, Inc
-July 2011-Sept 2015
-Assisted Individual clients or organizations in managing their photographic work
-Coorinated the editings, final printing and framing production for gallery and museum exhibitions
-Gave individual photoshop and printing tutorials to clients to aid their work flow and production
-Curator
+
+Panopticon Imaging, Inc  
+July 2011–Sept 2015
+
+* Assisted Individual clients or organizations in managing their photographic work
+* Coorinated the editings, final printing and framing production for gallery and museum exhibitions
+* Gave individual photoshop and printing tutorials to clients to aid their work flow and production
+
+Curator  
 Savannah, GA
-Desotorow Gallery
-Winter 2010-Winter 2011
-Organize artist events and curate themed group shows
-Responsible for curatorial associates and interns
-Contribute to concept development for new events, fund raisers and artist development
-Documentary Project Manager/Photo Editor
+
+Desotorow Gallery  
+Winter 2010–Winter 2011
+
+* Organize artist events and curate themed group shows
+* Responsible for curatorial associates and interns
+* Contribute to concept development for new events, fund raisers and artist development
+
+Documentary Project Manager/Photo Editor  
 Sham Shui Po District, Hong Kong
-Sham Shui Po Book Documentation
-Fall 2010-Spring 2011
-Lead a team of 12 undergraduates for Savannah College of Art and Design to shoot documentary project
-Gave shooting assignments and organized cultural visits within the documentary purview
-Acted as Photo Editor in conjunction with architectural graduate students
-Culminated in publication of Tilting the Lens: Telling the Story of Sham Shui Po
-Studio Assistant
+
+Sham Shui Po Book Documentation  
+Fall 2010–Spring 2011
+
+* Lead a team of 12 undergraduates for Savannah College of Art and Design to shoot documentary project
+* Gave shooting assignments and organized cultural visits within the documentary purview
+* Acted as Photo Editor in conjunction with architectural graduate students
+* Culminated in publication of Tilting the Lens: Telling the Story of Sham Shui Po
+
+Studio Assistant  
 Boston, Massachusetts
-Henry Horenstein
-Summer 2010-Summer 2011
-Responsible for new data management system of the Horenstein film archive
-Scanning, filing and retrieval of imagery for publication and exhibition use
-Research Exhibition and Collection opportunities for various Horenstein portfolios
+
+Henry Horenstein  
+Summer 2010–Summer 2011
+
+* Responsible for new data management system of the Horenstein film archive
+* Scanning, filing and retrieval of imagery for publication and exhibition use
+* Research Exhibition and Collection opportunities for various Horenstein portfolios
+</div>
 
 
 # Solo Exhibitions
