@@ -1,0 +1,69 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+main {
+    h2 {
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    #headers {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 1em;
+        li {
+            display: inline-block;
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 1.1em;
+        border-top: 1px solid $brand-color;
+        color: $brand-color;
+        padding-top: .5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        letter-spacing: .05em;
+    }
+
+    .datelist {
+        display: grid;
+        grid-template-columns: 7em 1fr;
+        grid-auto-flow: dense;
+        column-gap: 2em;
+
+        dt {
+            grid-column: 2;
+            text-indent: -2em;
+            margin-left: 2em;
+
+        }
+        dd {
+            grid-column: 1;
+            margin: 0;
+        }
+    }
+
+    #teachingContents {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        p {
+            max-width: initial;
+        }
+        p:nth-of-type(even) {
+            text-align: right;
+        }
+        ul {
+            margin-top: 0;
+            grid-column: 1 / span 2;
+        }
+    }
+}
