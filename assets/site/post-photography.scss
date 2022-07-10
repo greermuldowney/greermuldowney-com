@@ -16,6 +16,10 @@ main {
     body {
         scroll-snap-type: y proximity;
     }
+
+    nav, footer {
+        scroll-snap-align: end;
+    }
 }
 
 #slideshow {
@@ -59,28 +63,20 @@ main {
     > div {
         width: 100%;
         height: 100%;
+        @include breakpoint(mobile) {
+            height: auto;
+        }
     }
 
     img {
         width: 100%;
         height: 100%;
         @include breakpoint(mobile) {
-            height: calc(100vh - #{2 * $minimum-mobile-side-padding});
+            height: auto;
+            max-height: calc(100vh - #{2 * $minimum-mobile-side-padding});
         }
         object-fit: contain;
         display: block;
     }
 }
 
-.photography-monetary-violence #slideshow {
-    @include breakpoint(mobile) {
-        > div {
-            height: auto;
-        }
-        img {
-            height: auto;
-            max-height: calc(100vh - #{2 * $minimum-mobile-side-padding});
-        }
-    }
-
-}
