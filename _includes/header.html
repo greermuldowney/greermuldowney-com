@@ -6,12 +6,12 @@
     <div id="items-photography">
         {% for post in site.categories.photography -%}
             {%- if post.end-date == null -%}
-        <div class="photography-{{ post.title | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a><div>{% include photography-year-range.html post=post %}</div></div>
+        <div class="photography-{{ post.title | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
             {%- endif -%}
         {%- endfor %}
         {% for post in site.categories.photography -%}
             {%- if post.end-date != null -%}
-        <div class="photography-{{ post.title | slugify }}"><a href="{{ post.url | relative_url  }}">{{ post.title }}</a><div>{% include photography-year-range.html post=post %}</div></div>
+        <div class="photography-{{ post.title | slugify }}"><a href="{{ post.url | relative_url  }}">{{ post.title }}</a></div>
             {%- endif -%}
         {%- endfor %}
     </div>
