@@ -16,16 +16,18 @@
 // RESET
 * { box-sizing: border-box; }
 
+:root {
+    font-size: 18px;
+    @include breakpoint(tablet) {
+        font-size: 16px;
+    }
+}
+
 body {
     font-family: $text-font;
     color: $text-color;
     padding: 0;
     line-height: $standard-line-height;
-
-    font-size: 18px;
-    @include breakpoint(tablet) {
-        font-size: 16px;
-    }
 
     margin: $minimum-side-padding;
     @include breakpoint(mobile) {
