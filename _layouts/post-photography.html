@@ -2,11 +2,15 @@
 layout: default
 body-class: photography post-photography
 custom-css: post-photography
+custom-js: gallery-navigation
 ---
 
 <div id="slideshow">
     <article>
 <h1>{{ page.title | smartify }} ({% include photography-year-range.html post=page %})</h1>
+{% if page.subtitle %}
+<h3>{{ page.subtitle | smartify }}</h3>
+{% endif %}
 
 {{ page.content }}
     </article>

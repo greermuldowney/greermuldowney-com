@@ -184,9 +184,32 @@ nav sup {
     {%- endfor -%}
 {% endfor %}
 
-// MAIN
-main {
-    h1 {
+// Navigation
+.post-photography #gallery-navigation,
+.post-curatorial #gallery-navigation {
+    display: flex;
+    justify-content: space-between;
 
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+#gallery-navigation {
+    display: none;
+
+    button {
+        border-radius: 2em;
+        font-size: 1em;
+        padding: .2em 1em .3em;
+
+        border: 1px solid $text-color;
+        color: $text-color;
+        background-color: $background-color;
+
+        &:active {
+            border-color: $brand-color;
+            background-color: $brand-color;
+            color: $background-color;
+        }
     }
 }

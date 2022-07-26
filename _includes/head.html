@@ -41,6 +41,15 @@
     <link rel="mask-icon" href="{{ '/assets/favicon/safari-pinned-tab.svg?v=1' | relative_url }}" color="#08327d">
     <meta name="theme-color" content="#fff">
 
+    {%- if layout.custom-js -%}
+        {%- if layout.custom-js[0] -%}
+            {%- for js in layout.custom-js -%}
+            <script src="{{ '/assets/site/' | append: js | append: '.js' | relative_url }}"></script>
+            {%- endfor -%}
+        {%- else -%}
+            <script src="{{ '/assets/site/' | append: layout.custom-js | append: '.js' | relative_url }}"></script>
+        {%- endif -%}
+    {%- endif -%}
     {%- if page.custom-js -%}
         {%- if page.custom-js[0] -%}
             {%- for js in page.custom-js -%}
