@@ -11,6 +11,11 @@
     height: 100lvh;
     z-index: -1;
 }
+@supports not (height: 100lvh) {
+    #background, #overlay {
+        height: 100vh;
+    }
+}
 #background {
     background-size: cover;
     background-position: center center;

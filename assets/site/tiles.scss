@@ -19,13 +19,16 @@
     aspect-ratio: 320/240;
     text-decoration: none;
     position: relative;
+    line-height: $compact-line-height;
 }
 a {
     background-position: center;
     background-size: cover;
 }
 span span {
-    padding: .2em;
+    box-shadow: .2em 0 0 white, -.2em 0 0 white;
+    box-decoration-break: clone;
+    padding: .2em 0;
     background-color: white;
 }
 .overlay {
@@ -48,6 +51,8 @@ span span {
         font-size: max(1rem, 6vw);
     }
     z-index: 1;
+    padding-left: $minimum-side-padding;
+    padding-right: $minimum-side-padding;
 }
 a:hover .title {
     color: #fc0047;
