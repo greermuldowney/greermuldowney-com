@@ -117,25 +117,10 @@ main {
     }
 }
 
-body.home {
-
-    header {
-        grid-area: top / left / main / right;
-    }
-
-    main {
-        grid-area: main / main / bottom / right;
-        @include breakpoint(mobile) {
-            grid-area: main / left / nav / right;
-        }
-    }
-}
-
-
 
 // STYLE
 header {
-    > a {
+    > span > a {
         display: block;
         color: $text-color;
         text-transform: uppercase;
@@ -150,7 +135,7 @@ header {
         font-size: 1em;
     }
 }
-.home header > a { font-size: 2em; }
+.home header > span > a { font-size: 2em; }
 nav, footer {
     font-size: .8em;
     letter-spacing: .05em;
@@ -164,7 +149,7 @@ nav, footer {
             max-width: 15em;
             margin-bottom: .6em;
         }
-        > a {
+        > span > a {
             text-transform: uppercase;
         }
     }

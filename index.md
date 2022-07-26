@@ -1,7 +1,26 @@
 ---
-body-class: home
+layout: default
+custom-css: home
+random-images:
+    - monetary-violence/Assembly_Row_06.jpg
+    - the-golden-years/krusinski_02.jpg
 ---
+<div id="background">
+</div>
+<div id="overlay">
+</div>
 
-
-
-MAIN PAGE
+<style>
+#background {
+    background-image: url("{{ '/assets/series/monetary-violence/Assembly_Row_06.jpg' | relative_url }}");
+}
+</style>
+<script type="text/javascript">
+let element = document.getElementById("background");
+let possibleImages = [
+{% for random-image in page.random-images %}
+"{{ '/assets/series/' | append: random-image | relative_url }}",
+{% endfor %}
+];
+element.style.backgroundImage = `url("${possibleImages[Math.floor(Math.random() * possibleImages.length)]}")`;
+</script>

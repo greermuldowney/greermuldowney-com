@@ -1,8 +1,8 @@
 <header>
-    <a href="{{ site.baseurl }}{% link index.md %}"><h1>Greer Muldowney</h1> likes photography</a>
+    <span><a href="{{ site.baseurl }}{% link index.md %}"><h1>Greer Muldowney</h1> likes photography</a></span>
 </header>
 <nav>
-    <div id="header-photography"><a href="{{ site.baseurl }}{% link photography/index.html %}">Photography</a></div>
+    <div id="header-photography"><span><a href="{{ site.baseurl }}{% link photography/index.html %}">Photography</a></span></div>
     <div id="items-photography">
         {% for post in site.categories.photography -%}
             {%- if post.end-date == null -%}
@@ -15,13 +15,13 @@
             {%- endif -%}
         {%- endfor %}
     </div>
-    <div id="header-curatorial"><a href="{{ site.baseurl }}{% link curatorial/index.md %}">Curatorial & Projects</a></div>
+    <div id="header-curatorial"><span><a href="{{ site.baseurl }}{% link curatorial/index.md %}">Curatorial & Projects</a></span></div>
     <div id="items-curatorial">
         {% for post in site.categories.curatorial -%}
         <div class="curatorial-{{ post.title | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
         {%- endfor %}
     </div>
-    <div id="header-cv"><a href="{{ site.baseurl }}{% link cv.md %}">Curriculum Vitae</a></div>
-    <div id="header-bio"><a href="{{ site.baseurl }}{% link bio.md %}">Bio</a></div>
-    <div id="header-contact"><a href="{{ site.baseurl }}{% link contact.md %}">Contact</a></div>
+    <div id="header-cv"><span><a href="{{ site.baseurl }}{% link cv.md %}">Curriculum Vitae</a></span></div>
+    <div id="header-bio"><span><a href="{{ site.baseurl }}{% link bio.md %}">Bio</a></span></div>
+    <div id="header-contact"><span><a href="{{ site.baseurl }}{% link contact.md %}">Contact</a></span></div>
 </nav>
