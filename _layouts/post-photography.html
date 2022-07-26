@@ -7,7 +7,7 @@ custom-js: gallery-navigation
 
 <div id="slideshow">
     <article>
-<h1>{{ page.title | smartify }} ({% include photography-year-range.html post=page %})</h1>
+<h1>{{ page.title | smartify }} <span class="date">({% include photography-year-range.html post=page %})</span></h1>
 {% if page.subtitle %}
 <h3>{{ page.subtitle | smartify }}</h3>
 {% endif %}
