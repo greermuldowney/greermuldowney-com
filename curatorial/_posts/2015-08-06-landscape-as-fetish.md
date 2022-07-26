@@ -14,6 +14,7 @@ participants:
         - Angela Mittiga
         - Anastasia Samoylova
 photo-directory-prefix: landscape-as-fetish/
+preferred-splash-image: IMG_2594.jpg
 photos:
     - filename: The_Actual_Globe.jpg
     - filename: IMG_2510.jpg

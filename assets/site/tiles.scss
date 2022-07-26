@@ -1,0 +1,66 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+#grid {
+    display: grid;
+    gap: .5em;
+    grid-template-columns: 1fr 1fr;
+    @include breakpoint(tablet) {
+	    grid-template-columns: 1fr;
+    }
+    text-align: center;
+}
+#grid > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aspect-ratio: 320/240;
+    text-decoration: none;
+    position: relative;
+}
+a {
+    background-position: center;
+    background-size: cover;
+}
+span span {
+    padding: .2em;
+    background-color: white;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: max(1rem, 2vw);
+    @include breakpoint(tablet) {
+        font-size: max(1rem, 4vw);
+    }
+    @include breakpoint(mobile) {
+        font-size: max(1rem, 6vw);
+    }
+    z-index: 1;
+}
+a:hover .title {
+    color: #fc0047;
+}
+.date {
+    display: block;
+    font-size: max(1rem, 1.5vw);
+    @include breakpoint(tablet) {
+        font-size: max(1rem, 3vw);
+    }
+    @include breakpoint(mobile) {
+        font-size: max(1rem, 4.5vw);
+    }
+    margin-top: 1em;
+    z-index: 1;
+}

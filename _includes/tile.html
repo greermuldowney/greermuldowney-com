@@ -1,0 +1,9 @@
+{% assign image = include.post.photos[0].filename %}
+{% if include.post.preferred-splash-image %}
+    {% assign image = include.post.preferred-splash-image %}
+{% endif %}
+<a href="{{ include.post.url | relative_url }}" style="background-image:url('{{ "/assets/series/" | append: include.post.photo-directory-prefix | append: image | relative_url }}')">
+<span class="overlay"></span>
+<span class="title"><span>{{ include.post.title | smartify }}</span></span>
+<span class="date"><span>{% include photography-year-range.html post=include.post %}</span></span>
+</a>

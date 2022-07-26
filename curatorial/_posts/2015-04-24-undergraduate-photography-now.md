@@ -25,6 +25,7 @@ participants:
         - Kelsey Whitaker, NESOP
         - Yulin Wu, University of Massachusetts Dartmouth
 photo-directory-prefix: undergraduate-photography-now/
+preferred-splash-image: IMG_2345 copy.jpg
 photos:
     - filename: FFF15-Evite-UPN5.jpg
     - filename: IMG_2341 copy.jpg

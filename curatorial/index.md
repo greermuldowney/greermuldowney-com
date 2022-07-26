@@ -1,9 +1,11 @@
 ---
 layout: default
 body-class: curatorial
-custom-css: curatorial
+custom-css: tiles
 ---
 
+<div id="grid">
 {% for post in site.categories.curatorial %}
-<a href="{{ post.url | relative_url }}">{{ post.title | smartify  }}</a>
+    {% include tile.html post=post %}
 {% endfor %}
+</div>
