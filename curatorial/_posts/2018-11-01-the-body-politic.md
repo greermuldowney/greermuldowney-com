@@ -6,10 +6,11 @@ end-date: 2018-12-02
 participants:
     what-are-they-called: Artists
     who-are-they:
-        - Chase Barnes
-        - Candice Jackson
-        - Silvi Naci
-        - Brian Ulrich
+        - name: Chase Barnes
+        - name: Candice Jackson
+          url: https://candicejacksonphotography.wordpress.com
+        - name: Silvi Naci
+        - name: Brian Ulrich
 photo-directory-prefix: the-body-politic/
 photos:
     - filename: Area Gallery_15-compressed.jpg

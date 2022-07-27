@@ -42,13 +42,27 @@ custom-js: gallery-navigation
 {{ page.content }}
 
 {%- if page.participants %}
+<div id="participants">
 <h3>{{ page.participants.what-are-they-called | smartify }}</h3>
 
-<div class="participants">
-{{ page.participants.who-are-they | join: " • " | smartify }}
-</div>
+<ul>
+{%- for participant in page.participants.who-are-they -%}
+<li>
+{%- if participant.url -%}
+<a href="{{ participant.url }}">
+{% endif -%}
+{{ participant.name | smartify }}
+{%- if participant.url -%}
+</a>
+{%- endif -%}
+{%- if participant.note %}
+<span class="note">{{ participant.note | smartify }}</span>
 {%- endif %}
-
+</li>
+{% endfor -%}
+</ul>
+{%- endif %}
+</div>
     </article>
 
 {% for photo in page.photos -%}

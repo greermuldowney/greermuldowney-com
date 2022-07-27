@@ -50,13 +50,14 @@ main {
     article {
         max-width: 26em;
         max-height: 100%;
-
         align-self: center;
         overflow: scroll;
         @include breakpoint(mobile) {
             align-self: flex-start;
             overflow: initial;
             scroll-snap-align: none;
+            max-width: initial;
+            max-height: initial;
         }
 
         p:first-of-type {
@@ -66,13 +67,19 @@ main {
 
     h1 .date {
         font-size: .7em;
-        line-height: $standard-line-height;
+    }
+
+    h2 {
+        font-weight: 400;
     }
 
     h3 {
         font-style: italic;
         font-weight: 400;
-        line-height: $standard-line-height;
+
+        &:first-of-type {
+            margin-top: .5em;
+        }
     }
 
     > div {

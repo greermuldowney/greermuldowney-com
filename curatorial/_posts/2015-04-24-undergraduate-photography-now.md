@@ -6,24 +6,43 @@ end-date: 2015-05-28
 participants:
     what-are-they-called: Featured Students
     who-are-they:
-        - Mike Bodall, Lesley University College of Art and Design (LUCAD)
-        - Tara Butler, Emerson College
-        - Brandon Dunning, University of Massachusetts Dartmouth
-        - Jamie Feiler, Hampshire College
-        - Abby Hanus, Hampshire College
-        - Candice Jackson, Massachusetts College of Art and Design (MassArt)
-        - Camilla Jerome, LUCAD
-        - Hollis Johnson, MassArt
-        - Lydia Mackela, Rhode Island College (RIC)
-        - Gabriela Margarita, Yale University
-        - Rachel Martin, New England School of Photography (NESOP)
-        - Karen Mawikere, University of New Hampshire (UNH)
-        - Kolin Perry, LUCAD
-        - Kathryn Riley, Boston College
-        - Will Russack, School of the Museum of Fine Arts (SMFA)
-        - Sara Salazar, Hampshire College
-        - Kelsey Whitaker, NESOP
-        - Yulin Wu, University of Massachusetts Dartmouth
+        - name: Mike Bodall
+          note: Lesley University College of Art and Design (LUCAD)
+          url: http://www.mikebodall.com
+        - name: Tara Butler
+          note: Emerson College
+        - name: Brandon Dunning
+          note: University of Massachusetts Dartmouth
+        - name: Jamie Feiler
+          note: Hampshire College
+        - name: Abby Hanus
+          note: Hampshire College
+        - name: Candice Jackson
+          note: Massachusetts College of Art and Design (MassArt)
+        - name: Camilla Jerome
+          note: LUCAD
+        - name: Hollis Johnson
+          note: MassArt
+        - name: Lydia Mackela
+          note: Rhode Island College (RIC)
+        - name: Gabriela Margarita
+          note: Yale University
+        - name: Rachel Martin
+          note: New England School of Photography (NESOP)
+        - name: Karen Mawikere
+          note: University of New Hampshire (UNH)
+        - name: Kolin Perry
+          note: LUCAD
+        - name: Kathryn Riley
+          note: Boston College
+        - name: Will Russack
+          note: School of the Museum of Fine Arts (SMFA)
+        - name: Sara Salazar
+          note: Hampshire College
+        - name: Kelsey Whitaker
+          note: NESOP
+        - name: Yulin Wu
+          note: University of Massachusetts Dartmouth
 photo-directory-prefix: undergraduate-photography-now/
 preferred-splash-image: IMG_2345 copy.jpg
 photos:

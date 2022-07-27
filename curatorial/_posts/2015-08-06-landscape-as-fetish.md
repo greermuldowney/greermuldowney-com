@@ -6,13 +6,13 @@ end-date: 2015-08-29
 participants:
     what-are-they-called: Artists
     who-are-they:
-        - Timothy Briner
-        - Jesse Burke
-        - Christine Collins
-        - Mark Dorf
-        - Jonathan Gitelson
-        - Angela Mittiga
-        - Anastasia Samoylova
+        - name: Timothy Briner
+        - name: Jesse Burke
+        - name: Christine Collins
+        - name: Mark Dorf
+        - name: Jonathan Gitelson
+        - name: Angela Mittiga
+        - name: Anastasia Samoylova
 photo-directory-prefix: landscape-as-fetish/
 preferred-splash-image: IMG_2594.jpg
 photos:

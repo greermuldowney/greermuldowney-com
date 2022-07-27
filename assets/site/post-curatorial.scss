@@ -3,8 +3,31 @@
 @charset "utf-8";
 @import "base";
 
-.participants {
-    font-size: .8em;
-    letter-spacing: .05em;
-    max-width: auto;
+#participants {
+    margin-top: 2em;
+
+    ul {
+        font-size: .9em;
+        max-width: auto;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        display: inline;
+
+        &:after {
+            content: " • ";
+        }
+        &:last-of-type:after {
+            content: none;
+        }
+    }
+
+    .note {
+        color: $light-text-color;
+        font-size: .77em;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+    }
 }
