@@ -4,9 +4,9 @@ body-class: cv
 custom-css: cv
 ---
 
-This CV is also available as a _PDF_. For further inquiries, please [contact me](contact.md).
+This CV is also available as a PDF. For further inquiries, please [contact me](contact.md).
 
-## Contents
+# Contents
 
 * [Education](#education)
 * [Teaching Experience](#teaching)
@@ -49,7 +49,7 @@ Adjunct Photography Professor
 Cambridge, Massachusetts
 
 Lesley University College of Art and Design  
-Winter 2016-Present
+Winter 2016–Present
 
 - Photography Major Seminar I & II
 - Sophomore Theory Seminar in Photography
@@ -404,7 +404,7 @@ Nave Gallery, Somerville, MA. "Alter Ego II: A Photographic Exploration of All t
 JCCAC, Kowloon, Hong Kong. "Tilting the Lens: Telling the Story of Sham Shui Po." Curator
 : Mar 2011
 
-Philia, Central, Hong Kong. "Please Stand Back from the Doors." Curator- 3 person show
+Philia, Central, Hong Kong. "Please Stand Back from the Doors." Curator—3 person show
 : Feb 2011
 
 Desotorow Gallery, Savannah, GA. "REDUX: Art Made From Recycled Materials" Curator
@@ -416,7 +416,7 @@ Desotorow Gallery, Savannah, GA. "Propaganda!" Curator
 Desotorow Gallery, Savannah, GA. "Gendered." Curator
 : Feb 2010
 
-Nave Gallery, Somerville, MA "Alter Ego: Imagery from Toy Cameras and Alt Pro." Co- Curator Bridget Kane
+Nave Gallery, Somerville, MA "Alter Ego: Imagery from Toy Cameras and Alt Pro." Co-Curator Bridget Kane
 : May 2009
 
 Nave Gallery, Somerville, MA. "Turn on a Dime: All about the Money." Curator
@@ -522,7 +522,7 @@ Boston Globe. “Building Momentum: Photographer Greer Muldowney.” Interview b
 Photo District News. "The Curator." Best in Photography Essay/Reportage, Summer 2013.
 : July 2013
 
-The Pheonix, Boston. "Movin' On Up: Greer Muldowney's Photography." Review by Greg Cook. January 30.
+The Phoenix, Boston. "Movin' On Up: Greer Muldowney's Photography." Review by Greg Cook. January 30.
 : Jan 2013
 
 Wired Magazine; Italy. "How to Build a Pragmatic Utopia." by Daniel Pinchbeck, Accompanied Image
@@ -531,10 +531,10 @@ Wired Magazine; Italy. "How to Build a Pragmatic Utopia." by Daniel Pinchbeck, A
 Imprints: the Official Publication of Professional Women Photographers. Cover Image. Fall/Winter 2011
 : Win 2011
 
-Architecture Boston. "In Focus Artist." Media- Winter 2011 (V14 n4).
+Architecture Boston. "In Focus Artist." Media—Winter 2011 (V14 n4).
 : Win 2011
 
-Stanford Social Inovation Review. "The Race Against Co2." Fall Quarter 2011
+Stanford Social Innovation Review. "The Race Against Co2." Fall Quarter 2011
 : Fall 2011
 
 Fraction Magazine Issue 30. Featured Artist. September 2011
@@ -560,7 +560,7 @@ What Will You Remember? "It's all about the Relationships." Review. Asia Kepka e
 Lenscratch. "Art Experience: A Last Minute Art Run for the Felix Gonzalez-Torres Billboards." Interview.
 : Jan 2014
 
-"30 by 30- Greer Muldowney/Lee Miller" Interview- Professional Women Photographers
+"30 by 30—Greer Muldowney/Lee Miller" Interview—Professional Women Photographers
 : Mar 2012
 
 "Tilting the Lens: Documenting Sham Shui Po." Photo Editor, book.
