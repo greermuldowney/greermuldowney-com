@@ -52,6 +52,7 @@ $paragraph-content-box-width: $paragraph-left-margin + $paragraph-width;
     @if $form_factor == tablet {
         @media only screen and (max-width: 768px) { @content; }
     }
+    // Changing this requires updating gallery-navigation.js
     @if $form_factor == mobile {
         @media only screen and (max-width: 670px) { @content; }
     }

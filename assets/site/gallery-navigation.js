@@ -29,16 +29,17 @@ function scrollOver(direction) {
 function onKeyDown(e) {
     if (e.repeat)
         return;
+    // Based on breakpoint
+    if (window.matchMedia('(max-width: 670px)').matches)
+        return;
 
-    if (e.keyCode == 37 || e.keyCode == 32) {
+    if (e.keyCode == 37) {
         // ArrowLeft
-        console.log("left")
-        console.log(e.cancelable);
+        scrollOver(-1);
         e.preventDefault();
-    } else if (e.keyCode == 39) {
-        // ArrowRight
-        console.log("right")
-
+    } else if (e.keyCode == 39 || e.keyCode == 32) {
+        // ArrowRight, Space
+        scrollOver(1);
         e.preventDefault();
     }
 }
