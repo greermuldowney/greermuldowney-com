@@ -11,29 +11,14 @@ $compact-line-height: 1.2;
 
 $minimum-side-padding: 1rem;
 $minimum-mobile-side-padding: .75rem;
-$max-content-width: 60rem;
 
-$title-margin: 5rem 0 2rem;
-$paragraph-left-margin: 6rem;
-$paragraph-width: 30rem;
-$paragraph-content-box-width: $paragraph-left-margin + $paragraph-width;
 
-@mixin standard-block-behavior() {
-    box-sizing: border-box;
-    max-width: $max-content-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $minimum-side-padding;
-    padding-right: $minimum-side-padding;
-    @include breakpoint(mobile) {
-        padding-left: $minimum-mobile-side-padding;
-        padding-right: $minimum-mobile-side-padding;
-    }
-}
-
-@mixin brand-paragraph-style {
-    color: $light-text-color;
-    font-weight: 500;
+@mixin banner-highlight($padding: .2em) {
+    box-shadow: $padding 0 0 $background-color, -$padding 0 0 $background-color;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: $padding 0;
+    background-color: $background-color;
 }
 
 // Base layout styles assume modern mobile form factor. Use breakpoint() to upgrade.

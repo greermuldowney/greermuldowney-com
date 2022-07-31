@@ -41,10 +41,7 @@ header {
     }
     line-height: .9;
     span {
-        box-shadow: .2em 0 0 white, -.2em 0 0 white;
-        box-decoration-break: clone;
-        padding: .2em 0;
-        background-color: white;
+        @include banner-highlight;
     }
     > span > a {
         display: inline;
@@ -68,10 +65,7 @@ nav {
         margin-bottom: 1.6em;
     }
     span {
-        box-shadow: .2em 0 0 white, -.2em 0 0 white;
-        box-decoration-break: clone;
-        padding: .2em 0;
-        background-color: white;
+        @include banner-highlight;
     }
 }
 footer {
