@@ -17,6 +17,11 @@
     flex-direction: column;
     justify-content: center;
     aspect-ratio: 320/240;
+    @include breakpoint(mobile) {
+        @supports not (aspect-ratio: 1) {
+            height: calc((100vw - #{$minimum-mobile-side-padding * 2}) * .75);
+        }
+    }
     text-decoration: none;
     position: relative;
     line-height: $compact-line-height;
