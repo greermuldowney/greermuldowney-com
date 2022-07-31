@@ -1,4 +1,5 @@
 ---
+title: Curatorial & Projects
 body-class: curatorial
 custom-css: tiles
 ---
