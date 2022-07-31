@@ -60,12 +60,15 @@ nav {
     }
     margin-top: 15vh;
     margin-bottom: 20vh;
-    > div {
+    #menu-items > div {
         font-weight: 500;
         margin-bottom: 1.6em;
     }
     span {
         @include banner-highlight;
+    }
+    .social {
+        display: none;
     }
 }
 footer {

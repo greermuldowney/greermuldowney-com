@@ -12,6 +12,7 @@ $compact-line-height: 1.2;
 $minimum-side-padding: 1rem;
 $minimum-mobile-side-padding: .75rem;
 
+$animation-length: 0.2s;
 
 @mixin banner-highlight($padding: .2em) {
     box-shadow: $padding 0 0 $background-color, -$padding 0 0 $background-color;
