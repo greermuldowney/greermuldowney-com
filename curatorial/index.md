@@ -1,5 +1,4 @@
 ---
-layout: default
 body-class: curatorial
 custom-css: tiles
 ---
