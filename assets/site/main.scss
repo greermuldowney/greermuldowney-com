@@ -188,11 +188,12 @@ nav sup {
     {%- endfor -%}
 {% endfor %}
 
-// Navigation
+// Gallery navigation
 .post-photography #gallery-navigation,
 .post-curatorial #gallery-navigation {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;
 
     @include breakpoint(mobile) {
         display: none;
@@ -206,9 +207,14 @@ nav sup {
         font-size: 1em;
         padding: .2em 1em .3em;
 
-        border: 1px solid $text-color;
-        color: $text-color;
+        border: 1px solid $light-text-color;
+        color: $light-text-color;
         background-color: $background-color;
+
+        &:hover {
+            border-color: $text-color;
+            color: $text-color;
+        }
 
         &:active {
             border-color: $brand-color;
