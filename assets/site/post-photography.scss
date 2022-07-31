@@ -12,16 +12,6 @@ main {
     }
 }
 
-@include breakpoint(mobile) {
-    body {
-        scroll-snap-type: y proximity;
-    }
-
-    nav, footer {
-        scroll-snap-align: end;
-    }
-}
-
 #slideshow {
     display: flex;
 
