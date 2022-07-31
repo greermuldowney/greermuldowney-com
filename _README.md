@@ -5,11 +5,11 @@ This page is best viewed at https://github.com/greermuldowney/greermuldowney-com
 ### Setup GitHub SSH keys
 
 1. Open Terminal and set up new SSH keys:
-	```
-	ssh-keygen
-	<press enter 3 times>
-	cat ~/.ssh/id_rsa.pub
-	```
+    ```
+    ssh-keygen
+    <press enter 3 times>
+    cat ~/.ssh/id_rsa.pub
+    ```
 1. Go to https://github.com/settings/keys, log in if necessary
 1. "New SSH key"
 1. Enter any name for the key under "Title".
@@ -27,36 +27,36 @@ This page is best viewed at https://github.com/greermuldowney/greermuldowney-com
 Inspired by https://mac.install.guide/ruby/index.html
 
 1. Install `brew`:
-	```
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	```
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 1. Add Homebrew to `PATH` in `~/.zprofile`:
-	```
-	touch ~/.zprofile
- 	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-	eval "$(/opt/homebrew/bin/brew shellenv)"
-	brew doctor
-	```
+    ```
+    touch ~/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    brew doctor
+    ```
 1. Install `asdf`:
-	```
- 	brew install asdf
- 	echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
- 	```
+    ```
+    brew install asdf
+    echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+    ```
 1. Open a new Terminal window. Install `ruby` and set the latest version to be the default:
-	```
- 	asdf --version
- 	echo $PATH
- 	asdf plugin add ruby
- 	asdf install ruby latest
- 	asdf global ruby 3.1.2
- 	```
+    ```
+    asdf --version
+    echo $PATH
+    asdf plugin add ruby
+    asdf install ruby latest
+    asdf global ruby 3.1.2
+    ```
 1. Open a new Terminal window.
 1. Install `jekyll`:
- 	```
- 	gem install jekyll
- 	cd <directory-to-repository>
- 	bundle install
- 	```
+    ```
+    gem install jekyll
+    cd <directory-to-repository>
+    bundle install
+    ```
 
 ## Local debugging
 
@@ -100,8 +100,8 @@ end-date: optional
 photo-directory-prefix: REQUIRED
 preferred-splash-image: optional
 photos: REQUIRED
-	- filename: REQUIRED
-	...
+    - filename: REQUIRED
+    ...
 ```
 
 * `title` and `subtitle` are self-explanatory. Straight quotes will automatically be turned into smart quotes.
@@ -115,12 +115,12 @@ For the Curatorial section there are these additional properties:
 ```
 location: REQUIRED
 participants: optional
-	what-are-they-called: REQUIRED
-	who-are-they: REQUIRED
-		- name: REQUIRED
-		  note: optional
-		  url: optional
-		...
+    what-are-they-called: REQUIRED
+    who-are-they: REQUIRED
+        - name: REQUIRED
+          note: optional
+          url: optional
+        ...
 ```
 
 * `location`: Where the exhibition or show was held.
