@@ -144,6 +144,11 @@ header {
         font-size: 1em;
     }
 }
+@include breakpoint(mobile) {
+    body.page header {
+        max-width: calc(100% - 30px);
+    }
+}
 nav, footer {
     font-size: .8em;
     letter-spacing: .05em;
@@ -199,8 +204,6 @@ nav {
             display: block;
             height: 17px;
             width: 19px;
-            top: $minimum-mobile-side-padding;
-            right: $minimum-mobile-side-padding;
             z-index: 100;
             opacity: 0;
             cursor: pointer;
@@ -228,8 +231,6 @@ nav {
             height: 15px;
             width: 19px;
             position: absolute;
-            top: $minimum-mobile-side-padding;
-            right: $minimum-mobile-side-padding;
             z-index: 99;
             display: flex;
             flex-direction: column;
@@ -253,6 +254,10 @@ nav {
                 transform-origin: 100% 100%;
                 transition: transform $animation-length ease-in-out;
             }
+        }
+        .checkbox, .hamburger-lines {
+            top: calc(#{$minimum-mobile-side-padding} + .3em);
+            right: $minimum-mobile-side-padding;
         }
     }
     body.photography #menu-items #header-photography,
