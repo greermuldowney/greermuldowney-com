@@ -50,6 +50,12 @@ When you're ready to deploy all of your changes to the live website:
 
 * In GitHub Desktop, click "Push"
 
+# When you're done with editing the website
+
+* In Terminal, `Control-C` to stop the local web server.
+* Quit Terminal, Sublime Text, GitHub Desktop.
+
+
 # How the site is structured
 
 ## Jekyll and YAML
