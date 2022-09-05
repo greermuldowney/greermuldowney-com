@@ -581,7 +581,7 @@ Photo District News. PDN 30, “PDN’s 30 New and Emerging Photographers to Wat
 Somerville Arts Council Artist of the Month, May.
 : May 2015
 
-Center, Santa Fe. Selected Artist for Review Santa Fe 2)15.
+Center, Santa Fe. Selected Artist for Review Santa Fe 2015.
 : Jun 2015
 
 Winner in Photography, Massachusetts Cultural Council Fellowship
