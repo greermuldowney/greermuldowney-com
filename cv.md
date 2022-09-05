@@ -222,6 +222,9 @@ La Galerie Blue, Savannah, Georgia. "6,426 per km<sup>2</sup>."
 
 # Selected Exhibitions
 {:#selected}
+Indiana University Indianapolis, IN: A Yellow Rose Project
+: Jan 2020
+
 Illuminus Festival, Boston, MA. "It's Morning in America." Collaborative Installation with Gabriel Sosa
 : Dec 2019
 
