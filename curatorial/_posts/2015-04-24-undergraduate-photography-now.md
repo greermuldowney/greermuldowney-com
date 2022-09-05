@@ -1,5 +1,5 @@
 ---
-title: Undergraduate Photography Now (Part&nbsp;3)
+title: Undergraduate Photography Now
 subtitle: A Celebration of New England's Best Student Photographers
 location: Flash Forward Festival in Partnership with SoWA
 end-date: 2015-05-28
