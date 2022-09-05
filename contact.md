@@ -4,6 +4,8 @@ body-class: contact
 
 ## Contact
 
+Please use the contact form below to inquire about current projects, editorial opportunities, or prints.
+
 <form
   action="https://formspree.io/f/xayvrgzn"
   method="POST"
@@ -14,10 +16,3 @@ body-class: contact
 <input type="text" name="_gotcha" class="gotcha" />
 <button type="submit">Send</button>
 </form>
-
-
-## Prints
-
-Prints are available courtesy of Gallery Kayafas.
-
-Please contact [Arlette Kayafas](mailto:arlette@gallerykayafas.com) for editioning and print information.
