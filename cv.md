@@ -224,18 +224,25 @@ La Galerie Blue, Savannah, Georgia. "6,426 per km<sup>2</sup>."
 {:#selected}
 Filter Space, Chicago, IL: Context 2022
 : Apr 2022
+
 Jean McDonough Art Center, Worcester, MA: Origins
 : Apr 2022
+
 Fitchburg Art Museum, Fitchburg, MA: American Roadsides: Frank Armstrong’s Photographic Legacy
 : Jan 2022
+
 Colorado Photographic Art Center,  Denver, CO: Privilege and Consequence
 : Nov 2021
+
 Boston University Boston, MA: A Yellow Rose Project 
 : Jan 2021
+
 The Front, New Orleans, LA: A Yellow Rose Project
 : Dec 2020
+
 University of New Mexico,  Albuquerque, NM: A Yellow Rose Project
 : Oct 2020
+
 Indiana University Indianapolis, IN: A Yellow Rose Project
 : Aug 2020
 
