@@ -8,7 +8,6 @@ participants:
     who-are-they:
         - name: Chase Barnes
         - name: Candice Jackson
-          url: https://candicejacksonphotography.wordpress.com
         - name: Silvi Naci
         - name: Brian Ulrich
 photo-directory-prefix: the-body-politic/
