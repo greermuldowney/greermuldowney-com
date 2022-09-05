@@ -2,9 +2,12 @@ function onDocumentLoaded () {
     document.body.addEventListener("keydown", onKeyDown);
     document.querySelector("#gallery-navigation button:nth-of-type(1)").addEventListener("mousedown", () => { scrollOver(-1) });
     document.querySelector("#gallery-navigation button:nth-of-type(2)").addEventListener("mousedown", () => { scrollOver(1) });
+    document.getElementById("slideshow").addEventListener("click", () => { scrollOver(1) });
 }
 
 function scrollOver(direction) {
+    if (window.matchMedia('(max-width: 670px)').matches)
+        return;
     let slideshow = document.getElementById("slideshow");
     let scrollOffset = slideshow.scrollLeft + slideshow.offsetLeft;
 
@@ -17,7 +20,8 @@ function scrollOver(direction) {
             return;
         if (!wrapAroundNode)
             wrapAroundNode = child;
-        if (Math.sign(child.offsetLeft - scrollOffset) == direction) {
+        if (Math.sign(child.offsetLeft - scrollOffset) == direction &&
+            Math.sign((child.offsetLeft + child.offsetWidth) - (scrollOffset + slideshow.offsetWidth)) == direction) {
             child.scrollIntoView({ behavior: "smooth" });
             return true;
         }
