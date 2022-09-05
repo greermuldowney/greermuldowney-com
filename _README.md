@@ -16,15 +16,15 @@ This page is best viewed at https://github.com/greermuldowney/greermuldowney-com
     * Type in `asdf exec bundle exec jekyll serve`
     * You should see output similar to this:
         ```
-        Configuration file: /Volumes/Projects/greermuldowney-com/_config.yml
-            Source: /Volumes/Projects/greermuldowney-com
-       Destination: /Volumes/Projects/greermuldowney-com/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-       Jekyll Feed: Generating feed for posts
-                    done in 1.135 seconds.
- Auto-regeneration: enabled for '/Volumes/Projects/greermuldowney-com'
-    Server address: http://127.0.0.1:4000/
+               Configuration file: /Volumes/Projects/greermuldowney-com/_config.yml
+                   Source: /Volumes/Projects/greermuldowney-com
+              Destination: /Volumes/Projects/greermuldowney-com/_site
+        Incremental build: disabled. Enable with --incremental
+             Generating...
+              Jekyll Feed: Generating feed for posts
+                           done in 1.135 seconds.
+        Auto-regeneration: enabled for '/Volumes/Projects/greermuldowney-com'
+           Server address: http://127.0.0.1:4000/
         ```
     * In your web browser, load http://127.0.0.1:4000/. You should see the website.
 
