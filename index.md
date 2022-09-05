@@ -3,7 +3,7 @@ layout: default
 custom-css: home
 random-images:
     - monetary-violence/Assembly_Row_06.jpg
-    - the-golden-years/krusinski_02.jpg
+    - urban-turbines/Muldowney_Providence_Waste_Water.jpg
 ---
 <div id="background">
 </div>
