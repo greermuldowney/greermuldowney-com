@@ -32,7 +32,6 @@ main {
     @include breakpoint(tablet) {
         grid-template-columns: repeat(3, 1fr);
     }
-    gap: 1rem;
     margin-left: $minimum-side-padding;
     margin-right: $minimum-side-padding;
     display: none;
