@@ -27,8 +27,11 @@ function scrollOver(direction) {
             return;
         if (!wrapAroundNode)
             wrapAroundNode = child;
+        var imageEndDiff = (child.offsetLeft + child.offsetWidth) - (scrollOffset + slideshow.offsetWidth);
+        // seems like the math can be off by 1.
+        imageEndDiff = Math.sign(imageEndDiff) * (Math.abs(imageEndDiff) - 1);
         if (Math.sign(child.offsetLeft - scrollOffset) == direction &&
-            Math.sign((child.offsetLeft + child.offsetWidth) - (scrollOffset + slideshow.offsetWidth)) == direction) {
+            Math.sign(imageEndDiff) == direction) {
             child.scrollIntoView({ behavior: "smooth" });
             return true;
         }
