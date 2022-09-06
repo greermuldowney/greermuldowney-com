@@ -34,6 +34,7 @@ permalink: none
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Defaults
 defaults:
