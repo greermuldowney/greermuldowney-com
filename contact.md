@@ -2,9 +2,7 @@
 body-class: contact
 ---
 
-## Contact
-
-Please use the contact form below to inquire about current projects, editorial opportunities, or prints.
+Please submit the contact form below to inquire about current projects, editorial opportunities, or prints.
 
 <form
   action="https://formspree.io/f/xayvrgzn"
