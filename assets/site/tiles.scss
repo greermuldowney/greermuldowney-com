@@ -5,12 +5,16 @@
 
 #grid {
     display: grid;
-    gap: .5em;
     grid-template-columns: 1fr 1fr;
     @include breakpoint(tablet) {
 	    grid-template-columns: 1fr;
     }
     text-align: center;
+
+    gap: $minimum-side-padding;
+    @include breakpoint(mobile) {
+        gap: $minimum-mobile-side-padding;
+    }
 }
 #grid > a {
     display: flex;

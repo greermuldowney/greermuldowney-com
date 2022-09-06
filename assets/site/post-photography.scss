@@ -3,17 +3,19 @@
 @charset "utf-8";
 @import "base";
 
-$background-height: 20vh;
+$background-height: 33vw;
+$body-column-gap: .5rem;
 
 body {
     margin-right: 0;
+    column-gap: $body-column-gap;
     @include breakpoint(mobile) {
         margin-right: $minimum-mobile-side-padding;
     }
 }
 main {
     position: relative;
-    width: calc(100vw - 14rem);
+    width: calc(100vw - #{14rem - $body-column-gap});
     height: calc(100vh - #{2 * $minimum-side-padding});
     @include breakpoint(mobile) {
         width: auto;
@@ -53,6 +55,38 @@ main {
     }
 }
 
+#background {
+    display: none;
+    width: 100vw;
+    z-index: -1;
+    height: $background-height;
+    @include breakpoint(mobile) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -$minimum-mobile-side-padding;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+    }
+}
+
 #slideshow {
     display: flex;
 
@@ -79,7 +113,7 @@ main {
         align-self: center;
         overflow: scroll;
 
-        padding-left: $minimum-side-padding;
+        padding-left: $minimum-side-padding - $body-column-gap;
         @include breakpoint(mobile) {
             padding-left: 0;
         }
@@ -97,8 +131,42 @@ main {
         }
     }
 
-    h1 .date {
-        font-size: .7em;
+    .date span {
+        &:before { content: "("; }
+        &:after { content: ")"; }
+    }
+    @include breakpoint(mobile) {
+        h1 {
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: $background-height;
+            text-align: center;
+            span {
+                span {
+                    @include banner-highlight;
+                }
+            }
+            .title {
+                text-transform: uppercase;
+            }
+            .date {
+                margin-top: 1em;
+                display: block;
+                font-weight: 400;
+
+                span:before { content: ""; }
+                span:after { content: ""; }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2em;
+        .date {
+            font-size: .7em;
+        }
     }
 
     h2 {

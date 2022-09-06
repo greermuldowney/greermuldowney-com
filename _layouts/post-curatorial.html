@@ -7,11 +7,29 @@ custom-css:
 custom-js: gallery-navigation
 ---
 
+<div id="background">
+{%- assign image = page.photos[0].filename %}
+{% if page.preferred-splash-image %}
+    {% assign image = page.preferred-splash-image %}
+{% endif -%}
+<img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: image | relative_url }}" />
+<div class="overlay"></div>
+</div>
+
+<div id="gallery">
+
+{% for photo in page.photos -%}
+    <div>
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" data-index="image-{{ forloop.index }}" />
+    </div>
+{%- endfor %}
+
+</div>
 
 <div id="slideshow">
     <article>
 
-<h1>{{ page.title | smartify }}</h1>
+<h1><span class="title"><span>{{ page.title | smartify }}</span></span> <span class="date"><span>{% include photography-year-range.html post=page %}</span></span></h1>
 
 {%- if page.subtitle %}
 <h2> {{ page.subtitle | smartify }}</h2>
