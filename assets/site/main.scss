@@ -76,6 +76,10 @@ body {
         grid-template-columns: [left] 1fr [right];
     }
     gap: $minimum-side-padding;
+    min-height: calc(100vh - #{2 * $minimum-side-padding});
+    @include breakpoint(mobile) {
+        min-height: initial;
+    }
 }
 header {
     grid-area: top / left / main / main;
