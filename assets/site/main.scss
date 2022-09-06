@@ -370,12 +370,16 @@ body.page.{{ category_name }}-{{ post.title | slugify }} #menu-items .{{ categor
 // Gallery navigation
 .post-photography #gallery-navigation,
 .post-curatorial #gallery-navigation {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin-bottom: 1em;
-
     @include breakpoint(mobile) {
         display: none;
+    }
+
+    div {
+        margin-top: .5em;
+        display: flex;
+        justify-content: space-between;
     }
 }
 #gallery-navigation {
@@ -385,6 +389,7 @@ body.page.{{ category_name }}-{{ post.title | slugify }} #menu-items .{{ categor
         border-radius: 2em;
         font-size: 1em;
         padding: .2em 1em .3em;
+        margin: 0;
 
         border: 1px solid $light-text-color;
         color: $light-text-color;
@@ -393,13 +398,39 @@ body.page.{{ category_name }}-{{ post.title | slugify }} #menu-items .{{ categor
         &:hover {
             border-color: $text-color;
             color: $text-color;
+            svg {
+                fill: $text-color;
+            }
         }
 
         &:active {
             border-color: $brand-color;
             background-color: $brand-color;
-            color: $background-color;
+            color: $background-color !important;
+            svg {
+                fill: $background-color !important;
+            }
         }
+
+        &.gallery {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .3em;
+        }
+        svg {
+            width: 18px;
+            height: 18px;
+            fill: $light-text-color;
+        }
+    }
+}
+.show-gallery #gallery-navigation button.gallery {
+    border: 1px solid $brand-color;
+    color: $brand-color;
+    svg {
+        fill: $brand-color;
     }
 }
 

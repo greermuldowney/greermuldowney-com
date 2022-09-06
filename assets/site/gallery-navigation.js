@@ -1,8 +1,15 @@
 function onDocumentLoaded () {
     document.body.addEventListener("keydown", onKeyDown);
-    document.querySelector("#gallery-navigation button:nth-of-type(1)").addEventListener("mousedown", () => { scrollOver(-1) });
-    document.querySelector("#gallery-navigation button:nth-of-type(2)").addEventListener("mousedown", () => { scrollOver(1) });
+    document.querySelector("#gallery-navigation button.gallery").addEventListener("click", () => { document.body.classList.toggle("show-gallery") });
+    document.querySelector("#gallery-navigation button.prev").addEventListener("click", () => { scrollOver(-1) });
+    document.querySelector("#gallery-navigation button.next").addEventListener("click", () => { scrollOver(1) });
     document.getElementById("slideshow").addEventListener("click", () => { scrollOver(1) });
+    document.getElementById("gallery").addEventListener("click", goToImage);
+}
+
+function goToImage(e) {
+    document.body.classList.remove("show-gallery");
+    document.querySelector(`#slideshow .${e.target.dataset.index}`).scrollIntoView();
 }
 
 function scrollOver(direction) {

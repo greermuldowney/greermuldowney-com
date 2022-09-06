@@ -5,6 +5,16 @@ custom-css: post-photography
 custom-js: gallery-navigation
 ---
 
+<div id="gallery">
+
+{% for photo in page.photos -%}
+    <div>
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" data-index="image-{{ forloop.index }}" />
+    </div>
+{%- endfor %}
+
+</div>
+
 <div id="slideshow">
     <article>
 <h1>{{ page.title | smartify }} <span class="date">({% include photography-year-range.html post=page %})</span></h1>
@@ -17,7 +27,7 @@ custom-js: gallery-navigation
 
 {% for photo in page.photos -%}
     <div>
-        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" />
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" class="image-{{ forloop.index }}" />
     </div>
 {%- endfor %}
 

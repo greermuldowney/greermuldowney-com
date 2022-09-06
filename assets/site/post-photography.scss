@@ -3,19 +3,54 @@
 @charset "utf-8";
 @import "base";
 
+$background-height: 20vh;
+
 body {
-    column-gap: 0;
     margin-right: 0;
     @include breakpoint(mobile) {
         margin-right: $minimum-mobile-side-padding;
     }
 }
 main {
-    width: calc(100vw - 13rem);
+    position: relative;
+    width: calc(100vw - 14rem);
     height: calc(100vh - #{2 * $minimum-side-padding});
     @include breakpoint(mobile) {
         width: auto;
         height: auto;
+
+        p {
+            max-width: initial;
+        }
+    }
+}
+
+#gallery {
+    height: 100%;
+    overflow: scroll;
+    grid-template-columns: repeat(4, 1fr);
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    gap: 1rem;
+    margin-left: $minimum-side-padding;
+    margin-right: $minimum-side-padding;
+    display: none;
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 95%;
+            max-height: 95%;
+            cursor: pointer;
+            border: 3px solid $background-color;
+
+            &:hover {
+                outline: 2px solid $brand-color;
+            }
+        }
     }
 }
 
@@ -109,3 +144,15 @@ main {
     }
 }
 
+.show-gallery #slideshow {
+    display: none;
+    @include breakpoint(mobile) {
+        display: flex;
+    }
+}
+.show-gallery #gallery {
+    display: grid;
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
