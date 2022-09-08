@@ -4,13 +4,33 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
-    <title>
-        {%- if page.title -%}
-        {{ page.title | strip_html | smartify }} &middot; {{ site.title }}
-        {%- else -%}
-        {{ site.title }}
-        {%- endif -%}
-    </title>
+    {%- if page.title -%}
+        {%- assign page-title = page.title | strip_html | smartify | append:" &middot; " | append: site.title -%}
+    {%- else -%}
+        {%- assign page-title = site.title -%}
+    {%- endif -%}
+    <title>{{ page-title }}</title>
+
+    {%- if page.meta-description -%}
+    <meta name="description" content="{{ page.meta-description }}">
+    {%- elsif page.excerpt -%}
+    <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}">
+    {%- endif -%}
+    <meta property="og:title" content="{{ page-title }}" />
+    <meta property="og:type" content="{% if layout.og-type %}{{ layout.og-type }}{% elsif page.og-type %}{{ page.og-type }}{% else %}website{% endif %}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    {%- assign image = page.photos[0].filename -%}
+    {%- if page.preferred-splash-image -%}
+        {%- assign image = page.preferred-splash-image -%}
+    {%- endif -%}
+    {%- if image -%}
+    <meta property="og:image" content="{{ '/assets/series/' | append: page.photo-directory-prefix | append: image | absolute_url }}" />
+    {%- endif -%}
+    {%- if page.meta-description -%}
+    <meta property="og:description" content="{{ page.meta-description }}" />
+    {%- elsif page.excerpt -%}
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}" />
+    {%- endif -%}
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/assets/site/main.css' | relative_url }}">
