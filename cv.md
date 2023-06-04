@@ -34,22 +34,22 @@ This CV is also available as a PDF. For further inquiries, please [contact me](c
 {:#teaching}
 
 <div class="experience" markdown="1">
-Visiting Assistant Professor of Photography  
-Boston, Massachusetts
+Assistant Professor of Photography  
+Boston College
 
-Boston College  
+Chestnut Hill, Massachusetts  
 Fall 2013–Present
 
-- Intermediate Photography I & II
+- Intermediate and Advanced Photography Practices
 - Introduction to Digital Photography
 - Introduction to analogue photography and Darkroom processes
 - Art and Digital Media as it relates to contemporary photography and design
 
 Adjunct Photography Professor  
-Cambridge, Massachusetts
+Lesley Art + Design
 
-Lesley University College of Art and Design  
-Winter 2016–Present
+Cambridge, Massachusetts  
+Winter 2016–Spring 2020
 
 - Photography Major Seminar I & II
 - Sophomore Theory Seminar in Photography
@@ -57,45 +57,45 @@ Winter 2016–Present
 - Professional Development for Photography and Film Majors
 
 Lecturer in Photography  
-Boston, Massachusetts
+Boston University 
 
-Boston University  
+Boston, Massachusetts  
 Fall 2014–Present
 
 - Introduction to analogue photography and Darkroom processes
 - Introduction to digital photography, printing and critique techniques
 
 Graduate Committee Member  
-Providence, Rhode Island 
+MFA at Rhode Island School of Design 
 
-MFA at Rhode Island School of Design  
-2017, 2018
+Providence, Rhode Island  
+2017, 2018, 2022
 
 - Faculty mentor for Master’s Candidate thesis process
 - Committee Member for thesis
 
 Mentor Faculty  
-Boston, Massachusetts
+MFA Low Residency at Lesley Art + Design
 
-Master of Fine Arts Low Residency at Lesley University College of Art & Design  
+Cambridge, MA   
 Winter 2015–Present
 
 - Faculty Mentor for Low Residency MFA Candidate for 3rd semester practice
 - Critique intensives and professional progress reports revolving around studio work
 
 Adjunct Photography Professor  
-Manchester, New Hampshire
+New Hampshire Institute of Art
 
-New Hampshire Institute of Art  
+Manchester, New Hampshire  
 Fall 2011–Spring 2013
 
 - Team teaching a Materials and Processes Course to beginning students
 - Introduction to analogue photography and Darkroom processes
 
 Adjunct Professor of Photography  
-Brookline, Massachusetts
+New England Institute of Art
 
-New England Institute of Art  
+Brookline, Massachusetts  
 Fall 2011–Fall 2014
 
 - Teaching Concept Development and Theory courses to advanced photography students
@@ -118,6 +118,15 @@ Boston, Massachusetts
 * This annual call for artists is designed to give students their first professional art experience
 * Find co-curator, volunteers, venue for both the exhibition and portfolio walk, promotions, and installation of exhibition
 
+Vice President on the Board of Directors  
+Boston, Massachusetts
+
+Midway Artist Studios   
+2021- Present
+
+* Midway Artist Studios was established in 2005 as a place for artists to work and live affordably in Boston  
+* Serve in Vice President position to support the cultural and affordable housing mission 
+
 Regional Coordinator  
 Boston, Massachusetts
 
@@ -126,7 +135,7 @@ Fall 2011–2017
 
 * Gallery procurement, marketing and execution of photographic exhibitions for Flash Forward Festival 2012–15
 * Curator and host for portfolio walk and programming for "Undergraduate Photography Now!" 2013–15
-* Coordinator of 40 student volunteers at Festivals' several gallery and lecture locations.
+* Coordinator of 40 student volunteers at Festivals' several gallery and lecture locations
 
 SMFA Medici Committee  
 Boston, Massachusetts
@@ -135,7 +144,7 @@ School of the Museum of Fine Arts
 Fall 2015–Present
 
 * Assist in encouraging present students and previously related artists to partipate in the art sale.
-* Encourage the community to partipicate in the art sale, who’s proceeds to go scholarships for SMFA students.
+* Encourage the community to partipicate in the art sale, who’s proceeds to go scholarships for SMFA students
 
 Director on the Board of Directors  
 Winchester, Massachusetts
@@ -222,6 +231,24 @@ La Galerie Blue, Savannah, Georgia. "6,426 per km<sup>2</sup>."
 
 # Selected Exhibitions
 {:#selected}
+Dallas Center for Photography, Dallas, TX: A Yellow Rose Project
+: Oct 2023
+
+Colorado Photographic Art Center, Denver, CO: CPAC Permanent Collection Exhibition
+: May 2023
+
+MassArt, Boston, MA: Annual Auction
+: April 2023
+
+Multiple Formats Art Book Symposium Boston, MA: Selected Artist with Collaborator Caleb Cole
+: Jan 2023
+
+University of Iowa Iowa City, IA: A Yellow Rose Project
+: Dec 2022
+
+Boston Art Book Fair, Boston, MA: Selected Artist with Collaborator Caleb Cole
+: Nov 2022
+
 Filter Space, Chicago, IL: Context 2022
 : Apr 2022
 
@@ -450,6 +477,14 @@ Nave Gallery, Somerville, MA. "Turn on a Dime: All about the Money." Curator
 
 # Guest Lectures & Panel Participation
 {:#lectures}
+Boston University, Boston, MA. Guest Artist and Critic, First Year Graduate Students
+: Jan 2023
+
+Rhode Island Schoold of Design, Providence, RI. Guest Artist and Critic, Senior Photography Majors
+: Feb 2022
+
+Clark University, Worcester, MA. Guest Artist, Intermediate Photography class 
+: Feb 2021
 
 Emerson College, Boston, MA. Guest Artist and Critic for photography class 
 : Mar 2020
@@ -521,12 +556,20 @@ Clark University, Worcester, MA. Guest Critic for Senior Thesis Class
 
 # Selected Press & Interviews
 {:#press}
+Yankee Magazine: "Olmsted’s Gift," by Miles Howard, photographic feature
+: April 2023
+
+The New Republic: "The Failure of Public Policy," by Win McCormack, photographic illustration
+: Dec 2022
+
+Juniper Rag Issue 2: Featured Artist, "Greer Muldowney: Monetary Violence, a Real Game of Thrones on Winter Hill"
+: Fall 2021  
 
 Landscape Stories Issue 29: CITIES, Curated by Gianpaolo Aren
-: June 2019
+: Fall 2019 
 
 pdn.edu. Star Teacher: From emerging photographer to educator, Greer Muldowney..." by Brienne Walsh
-: Spring 2017
+: April 2017
 
 Slate.com. “The Science-Fiction Feel of New England’s Many Turbines.” by David Rosenberg, October 26th.
 : Oct 2015
@@ -592,9 +635,20 @@ Lenscratch. "Art Experience: A Last Minute Art Run for the Felix Gonzalez-Torres
 {:.datelist}
 
 
-# Selected Awards & Accolades
+# Selected Awards & Collections
 {:#awards}
 
+Visual Arts Fellowship, Somerville Artist Council 
+: 2023
+
+Fitchburg Art Museum permanent collection, 2 prints from "Monetary Violence."
+: 2022
+
+School of the Museum of Fine Arts Library Collection, selected publications: Strictly Personal (2022), 50 Years (2022), The Mary Book(2022),  <br>Growth (2022), Are you An American (2018)
+: Nov 2022
+
+Rhode Island School of Design Library Collection, selected publications: Strictly Personal (2022),50 Years (2022), Are you An American (2018)
+: Nov 2022
 
 Houston Center for Photography, Beth Block Juried Membership Honoraria, awarded by juror Lisa Volpe
 : July 2018
