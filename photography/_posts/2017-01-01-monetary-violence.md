@@ -2,27 +2,26 @@
 title: Monetary Violence
 photo-directory-prefix: monetary-violence/
 photos:
-    - filename: Muldowney_Somerville_condemned_01 (1).jpg
-    - filename: Viewscape_01.jpg
-    - filename: Muldowney_Gentrification_Rickys_04.jpg
-    - filename: Eclypse.jpg
-    - filename: Virgin.jpg
-    - filename: DSC00933 copy.jpg
-    - filename: Election_day.jpg
-    - filename: Eminent.jpg
-    - filename: Union_Square_Detail_12.jpg
-    - filename: Tomato_Rot.jpg
-    - filename: VFW_AllLivesMatter.jpg
-    - filename: DSC00995 copy.jpg
-    - filename: FRIT.jpg
-    - filename: IMG_9986.jpg
-    - filename: IMG_9717.jpg
-    - filename: Assembly_Row_06.jpg
-    - filename: Luxury_Tarps_05 copy.jpg
-    - filename: Construction_01 copy.jpg
-    - filename: IMG_0369.jpg
-    - filename: The_edge_Yard.jpg
-    - filename: Muldowney_WinterYard_Trash_03.jpg
+    - filename: Muldowney_MonetaryViolence_12.jpg
+    - filename: Muldowney_MonetaryViolence_01.jpg
+    - filename: Muldowney_MonetaryViolence_02.jpg
+    - filename: Muldowney_MonetaryViolence_03.jpg
+    - filename: Muldowney_MonetaryViolence_17.jpg
+    - filename: Muldowney_MonetaryViolence_04.jpg
+    - filename: Muldowney_MonetaryViolence_05.jpg
+    - filename: Muldowney_MonetaryViolence_16.jpg
+    - filename: Muldowney_MonetaryViolence_06.jpg
+    - filename: Muldowney_MonetaryViolence_07.jpg
+    - filename: Muldowney_MonetaryViolence_08.jpg
+    - filename: Muldowney_MonetaryViolence_09.jpg
+    - filename: Muldowney_MonetaryViolence_10.jpg 
+    - filename: Muldowney_MonetaryViolence_13.jpg
+    - filename: Muldowney_MonetaryViolence_14.jpg
+    - filename: Muldowney_MonetaryViolence_15.jpg  
+    - filename: Muldowney_MonetaryViolence_18.jpg
+    - filename: Muldowney_MonetaryViolence_19.jpg
+    - filename: Muldowney_MonetaryViolence_20.jpg
+    - filename: Muldowney_MonetaryViolence_11.jpg
 ---
 
 James “Whitey” Bulger, Jr., leader of the infamous Irish Mob syndicate “The Winter Hill Gang,” disappeared in 1995, evading authorities and leaving the city of Somerville, Mass., with a notorious legacy. On June 22, 2011, Whitey Bulger was arrested in Santa Monica California and charged with racketeering as well as the murders of 19 people. The median home price in Somerville the day of his arrest was $397,500.
