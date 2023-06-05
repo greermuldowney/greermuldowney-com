@@ -2,14 +2,14 @@
 title: The Golden Years
 photo-directory-prefix: the-golden-years/
 photos:
-    - filename: krusinski_02.jpg
-    - filename: krusinski.jpg
-    - filename: krusinski_03.jpg
-    - filename: krusinski_04.jpg
-    - filename: blick.jpg
-    - filename: blick_01.jpg
-    - filename: blick_02-compressed.jpg
-    - filename: nan_02.jpg
+    - filename: Golden_Years_01.jpg
+    - filename: Golden_Years_02.jpg
+    - filename: Golden_Years_03.jpg
+    - filename: Golden_Years_04.jpg
+    - filename: Golden_Years_05.jpg
+    - filename: Golden_Years_06.jpg
+    - filename: Golden_Years_07.jpg
+    - filename: Golden_Years_08.jpg
 ---
 
 For my grandparents generation, the concept of retirement was that of security, if not conformity. To move to warmer places almost seemed as a right of passage- one that as a contemporary news bite may become a part of American nostalgia, not unlike most of my grandmother's various collections of memorobilia, porcelain or encyclopedias.
