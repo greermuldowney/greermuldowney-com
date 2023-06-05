@@ -9,7 +9,6 @@ photos:
     - filename: blick.jpg
     - filename: blick_01.jpg
     - filename: blick_02-compressed.jpg
-    - filename: nan-compressed.jpg
     - filename: nan_02.jpg
 ---
 

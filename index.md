@@ -3,7 +3,7 @@ layout: default
 meta-description: Greer Muldowney is an artist, photography professor and independent curator based in Boston, Massachusetts.
 custom-css: home
 random-images:
-    - monetary-violence/Muldowney_MonetaryViolence_04.jpg
+    - monetary-violence/Muldowney_MonetaryViolence_15.jpg
     - arch_05.jpg
 ---
 <div id="background">
