@@ -87,12 +87,14 @@ main {
     }
 }
 
+.page-loaded #slideshow {
+    scroll-snap-type: x mandatory;
+}
 #slideshow {
     display: flex;
 
     height: 100%;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
     gap: $minimum-side-padding;
     @include breakpoint(mobile) {
         height: auto;

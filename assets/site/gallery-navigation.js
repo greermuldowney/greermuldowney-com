@@ -5,6 +5,7 @@ function onDocumentLoaded () {
     document.querySelector("#gallery-navigation button.next").addEventListener("click", () => { scrollOver(1) });
     document.getElementById("slideshow").addEventListener("click", () => { scrollOver(1) });
     document.getElementById("gallery").addEventListener("click", goToImage);
+    setTimeout(() => { document.body.classList.add("page-loaded"); }, 100);
 }
 
 function goToImage(e) {
