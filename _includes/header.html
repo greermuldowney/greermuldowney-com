@@ -22,10 +22,22 @@
                 {%- endif -%}
             {%- endfor %}
         </div>
+        <div id="header-collaborations"><span><a href="{{ site.baseurl }}{% link collaborations/index.md %}">Collaborations</a></span></div>
+        <div id="items-collaborations">
+            {% for post in site.categories.collaborations -%}
+            <div class="collaborations-{{ post.title | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+            {%- endfor %}
+        </div>
         <div id="header-curatorial"><span><a href="{{ site.baseurl }}{% link curatorial/index.md %}">Curatorial & Projects</a></span></div>
         <div id="items-curatorial">
             {% for post in site.categories.curatorial -%}
             <div class="curatorial-{{ post.title | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+            {%- endfor %}
+        </div>
+        <div id="header-commissions"><span><a href="{{ site.baseurl }}{% link commissions/index.md %}">Commissions</a></span></div>
+        <div id="items-commissions">
+            {% for post in site.categories.commissions -%}
+            <div class="commissions-{{ post.title | slugify }}"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
             {%- endfor %}
         </div>
         <div id="header-cv"><span><a href="{{ site.baseurl }}{% link cv.md %}">Curriculum Vitae</a></span></div>

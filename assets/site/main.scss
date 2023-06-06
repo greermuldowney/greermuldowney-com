@@ -265,7 +265,9 @@ nav {
         }
     }
     body.photography #menu-items #header-photography,
-    body.curatorial #menu-items #header-curatorial {
+    body.collaborations #menu-items #header-collaborations,
+    body.curatorial #menu-items #header-curatorial,
+    body.commissions #menu-items #header-commissions {
         margin-bottom: 1em;
     }
     body.page #menu-items {
@@ -337,7 +339,9 @@ footer img {
 }
 
 .photography #menu-items #header-photography a,
+.collaborations #menu-items #header-collaborations a,
 .curatorial #menu-items #header-curatorial a,
+.commissions #menu-items #header-commissions a,
 .cv #menu-items #header-cv a,
 .bio #menu-items #header-bio a,
 .contact #menu-items #header-contact a {
@@ -347,11 +351,15 @@ footer img {
     }
 }
 #items-photography,
-#items-curatorial {
+#items-collaborations,
+#items-curatorial,
+#items-commissions {
     display: none;
 }
 .photography #items-photography,
-.curatorial #items-curatorial {
+.collaborations #items-collaborations,
+.curatorial #items-curatorial,
+.commissions #items-commissions {
     display: block;
 }
 
@@ -373,7 +381,9 @@ body.page.{{ category_name }}-{{ post.title | slugify }} #menu-items .{{ categor
 
 // Gallery navigation
 .post-photography #gallery-navigation,
-.post-curatorial #gallery-navigation {
+.post-collaboration #gallery-navigation,
+.post-curatorial #gallery-navigation,
+.post-commission #gallery-navigation {
     display: block;
     margin-bottom: 1em;
     @include breakpoint(mobile) {

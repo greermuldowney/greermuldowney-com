@@ -42,10 +42,20 @@ defaults:
     values:
       layout: "post-photography"
   - scope:
+      path: "collaborations"
+      type: "posts"
+    values:
+      layout: "post-collaboration"
+  - scope:
       path: "curatorial"
       type: "posts"
     values:
       layout: "post-curatorial"
+  - scope:
+      path: "commissions"
+      type: "posts"
+    values:
+      layout: "post-commission"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
