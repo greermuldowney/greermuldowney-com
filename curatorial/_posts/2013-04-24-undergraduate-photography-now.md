@@ -42,7 +42,7 @@ Starting in 2014 in partnership with the Magenta Foundations's Flash Forward Fes
 
 This programming has been generously featured by the Photographic Resource Center, Griffin Museum of Photography, Gallery Kayafas and Lesley University. Curated by myself and revolving jurors selected from the photography industry, our programming has featured the work of over 100 of the regions brightest new talent. 
 
-[For more information about Undergraduate Photography Now, please see it's website here.](https://www.undergradphotographynow.com/) 
+[For more information about Undergraduate Photography Now, please see its website here.](https://www.undergradphotographynow.com/)
 
     what-are-they-called: Previous Co-Jurors  
     who-are-they:
