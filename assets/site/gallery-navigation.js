@@ -3,9 +3,14 @@ function onDocumentLoaded () {
     document.querySelector("#gallery-navigation button.gallery").addEventListener("click", () => { document.body.classList.toggle("show-gallery") });
     document.querySelector("#gallery-navigation button.prev").addEventListener("click", () => { scrollOver(-1) });
     document.querySelector("#gallery-navigation button.next").addEventListener("click", () => { scrollOver(1) });
-    document.getElementById("slideshow").addEventListener("click", () => { scrollOver(1) });
+    document.getElementById("slideshow").addEventListener("click", itemClicked);
     document.getElementById("gallery").addEventListener("click", goToImage);
     setTimeout(() => { document.body.classList.add("page-loaded"); }, 100);
+}
+
+function itemClicked(e) {
+    if (e.target.tagName != "VIDEO")
+        scrollOver(1);
 }
 
 function goToImage(e) {
