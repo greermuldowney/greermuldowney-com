@@ -647,7 +647,7 @@ Visual Arts Fellowship, Somerville Artist Council
 Fitchburg Art Museum permanent collection, 2 prints from "Monetary Violence."
 : 2022
 
-School of the Museum of Fine Arts Library Collection, selected publications: Strictly Personal (2022), 50 Years (2022), The Mary Book(2022),  <br>Growth (2022), Are you An American (2018)
+School of the Museum of Fine Arts Library Collection, selected publications: Strictly Personal (2022), 50 Years (2022), The Mary Book(2022), Growth (2022), Are you An American (2018)
 : Nov 2022
 
 Rhode Island School of Design Library Collection, selected publications: Strictly Personal (2022),50 Years (2022), Are you An American (2018)
