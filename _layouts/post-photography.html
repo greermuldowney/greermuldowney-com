@@ -31,7 +31,7 @@ og-type: article
 
 <div id="slideshow">
     <article>
-<h1><span class="title"><span>{{ page.title | smartify }}</span></span> <span class="date"><span>{% include photography-year-range.html post=page %}</span></span></h1>
+<header><h1><span class="title"><span>{{ page.title | smartify }}</span></span> <span class="date"><span>{% include photography-year-range.html post=page %}</span></span></h1>
 {% if page.collaborator -%}
     {%- if page.subtitle -%}
     <h2>{{ page.subtitle | smartify }}</h2>
@@ -41,7 +41,7 @@ og-type: article
     {%- if page.subtitle -%}
     <h3>{{ page.subtitle | smartify }}</h3>
     {%- endif -%}
-{%- endif %}
+{%- endif %}</header>
 {{ page.content }}
     </article>
 

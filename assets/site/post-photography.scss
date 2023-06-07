@@ -110,6 +110,15 @@ main {
     }
 
     article {
+        header {
+            margin-bottom: 1em;
+        }
+        h4 {
+            margin-top: 2rem;
+            margin-bottom: 1em;
+            font-weight: 600;
+        }
+
         max-width: 26em;
         max-height: 100%;
         align-self: center;
@@ -126,10 +135,6 @@ main {
             scroll-snap-align: none;
             max-width: initial;
             max-height: initial;
-        }
-
-        p:first-of-type {
-            margin-top: 1em;
         }
     }
 

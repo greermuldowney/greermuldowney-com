@@ -81,7 +81,7 @@ body {
         min-height: initial;
     }
 }
-header {
+body > header {
     grid-area: top / left / main / main;
     @include breakpoint(mobile) {
         grid-area: top / left / main / right;
@@ -93,7 +93,7 @@ nav {
         grid-area: initial;
     }
 }
-footer {
+body > footer {
     grid-area: footer-start / left / bottom / main;
     @include breakpoint(mobile) {
         grid-area: footer-start / left / bottom / right;
@@ -128,7 +128,7 @@ main {
 
 
 // STYLE
-header {
+body > header {
     > span > a {
         display: block;
         @include breakpoint(mobile) {
@@ -149,11 +149,11 @@ header {
     }
 }
 @include breakpoint(mobile) {
-    body.page header {
+    body.page > header {
         max-width: calc(100% - 30px);
     }
 }
-nav, footer {
+nav, body > footer {
     font-size: .8em;
     letter-spacing: .05em;
     margin-top: .6em;

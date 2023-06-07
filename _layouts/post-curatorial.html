@@ -29,15 +29,11 @@ og-type: article
 
 <div id="slideshow">
     <article>
-
-<h1><span class="title"><span>{{ page.title | smartify }}</span></span> <span class="date"><span>{% include photography-year-range.html post=page %}</span></span></h1>
-
+<header><h1><span class="title"><span>{{ page.title | smartify }}</span></span></h1>
 {%- if page.subtitle %}
 <h2> {{ page.subtitle | smartify }}</h2>
 {%- endif %}
-
 <h3>{{ page.location | smartify }}</h3>
-
 <h3>
 {%- if page.end-date -%}
     {% assign start-year = page.date | date: "%Y" %}
@@ -57,6 +53,7 @@ og-type: article
     {{ page.date | date: "%B %e, %Y" }}
 {%- endif %}
 </h3>
+</header>
 
 {{ page.content }}
 
