@@ -1,6 +1,6 @@
 ---
 title: Are You an American?
-subtitle: A Collaboration with Caleb Cole
+collaborator: Caleb Cole
 end-date: 2018-01-01
 photo-directory-prefix: are-you-an-american/
 preferred-splash-image: 02.jpg

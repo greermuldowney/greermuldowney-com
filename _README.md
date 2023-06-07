@@ -89,6 +89,7 @@ These are the top-level properties used in posts:
 ```
 title: REQUIRED
 subtitle: optional
+collaborator: optional
 end-date: optional
 
 photo-directory-prefix: REQUIRED
@@ -101,6 +102,7 @@ photos: REQUIRED
 ```
 
 * `title` and `subtitle` are self-explanatory. Straight quotes will automatically be turned into smart quotes.
+* `collaborator`: Include this if relevant.
 * `end-date`: This is used with the date of the post (listed in the filename) to create the date range for a project. In the Photography section it only lists the year, so the month and day do not matter. However, if you have multiple projects in a year, you can increment the month to force a specific order. Without this, the project is assumed to be open-ended, and has no end date.
 * `photo-directory-prefix`: This points to the subdirectory under `assets/series/` where the photos for the project exist. Make sure to include the ending slash, e.g. `photo-directory-prefix: cape-ann/`.
 * `photos`: This contains an indented list of all of the photos, to be displayed in order. If the photo is a video, use `video-filename` instead of `filename`.

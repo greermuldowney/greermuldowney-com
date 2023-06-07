@@ -63,14 +63,26 @@ span span {
 a:hover .title {
     color: #fc0047;
 }
+.collaborator {
+    display: block;
+    font-size: max(.8rem, 1.5vw);
+    @include breakpoint(tablet) {
+        font-size: max(.8rem, 2.5vw);
+    }
+    @include breakpoint(mobile) {
+        font-size: max(.8rem, 4vw);
+    }
+    margin-top: .15em;
+    z-index: 1;
+}
 .date {
     display: block;
     font-size: max(1rem, 1.5vw);
     @include breakpoint(tablet) {
-        font-size: max(1rem, 3vw);
+        font-size: max(.8rem, 3vw);
     }
     @include breakpoint(mobile) {
-        font-size: max(1rem, 4.5vw);
+        font-size: max(.8rem, 4.5vw);
     }
     margin-top: 1em;
     z-index: 1;

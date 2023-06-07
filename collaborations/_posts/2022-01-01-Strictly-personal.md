@@ -1,6 +1,6 @@
 ---
 title: Strictly Personal
-subtitle: A Collaboration with Caleb Cole
+collaborator: Caleb Cole
 end-date: 2022-01-01
 photo-directory-prefix: strictly-personal/
 preferred-splash-image: cc_GM_AB_35_funraiser copy.jpg

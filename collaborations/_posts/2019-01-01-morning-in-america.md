@@ -1,6 +1,6 @@
 ---
 title: It's Morning In America
-subtitle: A Collaboration with Gabriel Sosa
+collaborator: Gabriel Sosa
 end-date: 2019-01-01
 photo-directory-prefix: morning-in-america/
 preferred-splash-image: Morning_America_05.jpg

@@ -5,5 +5,8 @@
 <a href="{{ include.post.url | relative_url }}" style="background-image:url('{{ "/assets/series/" | append: include.post.photo-directory-prefix | append: image | relative_url }}')">
 <span class="overlay"></span>
 <span class="title"><span>{{ include.post.title | smartify }}</span></span>
+{% if include.post.collaborator %}
+<span class="collaborator"><span>with {{ include.post.collaborator }}</span></span>
+{% endif %}
 <span class="date"><span>{% include photography-year-range.html post=include.post %}</span></span>
 </a>
