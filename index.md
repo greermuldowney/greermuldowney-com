@@ -4,7 +4,7 @@ meta-description: Greer Muldowney is an artist, photography professor and indepe
 custom-css: home
 random-images:
     - monetary-violence/Muldowney_MonetaryViolence_15.jpg
-    - arch_05.jpg
+    - 6426-per-km2/arch_05.jpg
 ---
 <div id="background">
 </div>
