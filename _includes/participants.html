@@ -1,0 +1,18 @@
+<h3>{{ include.participants.what-are-they-called | smartify }}</h3>
+
+<ul>
+{%- for participant in include.participants.who-are-they -%}
+<li>
+{%- if participant.url -%}
+<a href="{{ participant.url }}">
+{% endif -%}
+{{ participant.name | smartify }}
+{%- if participant.url -%}
+</a>
+{%- endif -%}
+{%- if participant.note %}
+<span class="note">{{ participant.note | smartify }}</span>
+{%- endif %}
+</li>
+{% endfor -%}
+</ul>

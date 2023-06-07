@@ -62,26 +62,15 @@ og-type: article
 
 {%- if page.participants %}
 <div id="participants">
-<h3>{{ page.participants.what-are-they-called | smartify }}</h3>
-
-<ul>
-{%- for participant in page.participants.who-are-they -%}
-<li>
-{%- if participant.url -%}
-<a href="{{ participant.url }}">
-{% endif -%}
-{{ participant.name | smartify }}
-{%- if participant.url -%}
-</a>
+{%- if page.participants[0] -%}
+    {%- for participant-group in page.participants -%}
+        {%- include participants.html participants=participant-group -%}
+    {%- endfor -%}
+{%- else -%}
+    {%- include participants.html participants=page.participants -%}
 {%- endif -%}
-{%- if participant.note %}
-<span class="note">{{ participant.note | smartify }}</span>
-{%- endif %}
-</li>
-{% endfor -%}
-</ul>
-{%- endif %}
 </div>
+{%- endif -%}
     </article>
 
 {% for photo in page.photos -%}
