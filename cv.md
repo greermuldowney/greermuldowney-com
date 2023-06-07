@@ -398,6 +398,9 @@ The Jockey Club Creative Art Center, Shek Kip Mei, Hong Kong. “Sham Shui Po: A
 # Curatorial
 {:#curatorial}
 
+The Photographic Resource Center, Cambridge, MA. "Undergraduate Photography Now! VIII" Co-Curator Gordon Wilkins (postponed Covid-19)
+: April 2020 
+
 The Photographic Resource Center, Cambridge, MA. "Undergraduate Photography Now! VII" Co-Curator Caleb Cole
 : April 2019
 
