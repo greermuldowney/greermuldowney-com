@@ -22,7 +22,7 @@ These small projects have been collected into hand-made books. If you would like
 
 In May 2020, a few weeks into quarantine, I was wandering around a garden center near my home. Masked and squeamish about others even while outside, I found some fleeting comfort amongst the rows of plants and trees. 
 
-Then my phone rang. 
+Then my phone rang.
 
 “Greer, Mary’s dead. She had a fall.” 
 
