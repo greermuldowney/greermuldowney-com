@@ -5,6 +5,8 @@ custom-css: home
 random-images:
     - monetary-violence/Muldowney_MonetaryViolence_15.jpg
     - 6426-per-km2/arch_05.jpg
+    - small-run-books/Growth_image_01.jpg
+    - Rockaway-Beach/Rockaway_01.jpg
 ---
 <div id="background">
 </div>
