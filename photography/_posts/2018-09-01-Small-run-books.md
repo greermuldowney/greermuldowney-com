@@ -15,9 +15,7 @@ photos:
     - filename: Mary_book_03.jpg
 ---
 
-lorem ipsumdfasdljfasldfjsdalfjasldfjdsalkfjasldfjadsl;fja
-
-fa;sdfjkasd;flkjdslfkajskdk;lfas;fdj
+These small projects that have been collected into hand-made books. If you would like a copy, or prints from these volumes, [please contact me for more information.]({% link contact.md %})
 
 
 #### The Mary Tree (2022)
