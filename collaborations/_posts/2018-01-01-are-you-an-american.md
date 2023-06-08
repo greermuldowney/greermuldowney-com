@@ -3,7 +3,7 @@ title: Are You an American?
 collaborator: Caleb Cole
 end-date: 2018-01-01
 photo-directory-prefix: are-you-an-american/
-preferred-splash-image: 02.jpg
+preferred-splash-image: 04.jpg
 photos:
     - filename: Muldowney_Are_You_An_American.jpg
     - filename: 02.jpg
