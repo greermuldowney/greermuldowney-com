@@ -53,7 +53,7 @@ participants:
         - name: Yale University
 ---
 
-Starting in 2014 in partnership with the Magenta Foundations's Flash Forward Festival, "Undergraduate Photography Now" has been an ongoing opportunity program for college students in the New England region. Every year, students are selected for both an exhibition opportunity and portfolio walk, where participating artists have the opportunity to meet with industry professionals from across the photography and art inudstry. 
+Starting in 2014 in partnership with the Magenta Foundations's Flash Forward Festival, "Undergraduate Photography Now" has been an ongoing opportunity program for college students in the New England region. Every year, students are selected for both an exhibition opportunity and portfolio walk, where participating artists have the opportunity to meet with industry professionals from across the photography and art industry.
 
 This programming has been generously featured by the Photographic Resource Center, Griffin Museum of Photography, Gallery Kayafas and Lesley University. Curated by myself and revolving jurors selected from the photography industry, our programming has featured the work of over 100 of the regions brightest new talent. 
 

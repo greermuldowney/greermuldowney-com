@@ -53,6 +53,6 @@ Limited Editions staples, 8.5x5", 16 pages
 
 #### Growth (2023)
 
-A musing over the cyclicle nature of caring for plants. Images only.
+A musing over the cyclical nature of caring for plants. Images only.
 
-Limited Edition Hand-sewm with vellum, 5x6.25", 10 pages
+Limited Edition Hand-sewn with vellum, 5x6.25", 10 pages

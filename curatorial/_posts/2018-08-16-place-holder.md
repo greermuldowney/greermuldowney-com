@@ -51,4 +51,4 @@ City life may not be the first image that comes to mind when you imagine the New
 
 This regionally juried exhibition at Gallery 263 asks our community of New England: “How do each of us fit into this puzzle, and what is our relationship to our cities as artists?“
 
-Charles River water basin painted by Gallery263 Director Catherine Graffam.
+Charles River water basin painted by Gallery 263 Director Catherine Graffam.
