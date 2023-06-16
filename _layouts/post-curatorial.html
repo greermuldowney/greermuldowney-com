@@ -17,11 +17,15 @@ og-type: article
 <div class="overlay"></div>
 </div>
 
+<div id="content">
 <div id="gallery">
-
-{% for photo in page.photos -%}
+{%- for photo in page.photos -%}
     <div>
+        {%- if photo.filename -%}
         <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" data-index="image-{{ forloop.index }}" />
+        {%- elsif photo.video-filename -%}
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.placeholder-image | relative_url }}" data-index="image-{{ forloop.index }}" />
+        {%- endif -%}
     </div>
 {%- endfor %}
 
@@ -72,8 +76,13 @@ og-type: article
 
 {% for photo in page.photos -%}
     <div>
-        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" />
+        {%- if photo.filename -%}
+        <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" class="image-{{ forloop.index }}" />
+        {%- elsif photo.video-filename -%}
+        <video src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.video-filename | relative_url }}" poster="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.placeholder-image | relative_url }}" class="image-{{ forloop.index }}" controls />
+        {%- endif -%}
     </div>
 {%- endfor %}
 
+</div>
 </div>

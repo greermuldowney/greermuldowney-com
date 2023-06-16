@@ -38,9 +38,11 @@ body {
 a {
     &:link, &:visited, &:active {
         color: $text-color;
+        transition: $short-animation-length color;
     }
     &:hover {
         color: $brand-color;
+        transition: $short-animation-length color;
     }
     text-decoration: none;
 }
@@ -194,6 +196,7 @@ nav {
         width: 20px;
         height: 20px;
         fill: $light-text-color;
+        transition: $short-animation-length;
 
         &:hover {
             fill: $brand-color;
@@ -402,7 +405,11 @@ body.page.{{ category_name }}-{{ post.title | slugify }} #menu-items .{{ categor
 
         border: 1px solid $light-text-color;
         color: $light-text-color;
+        transition: $short-animation-length;
         background-color: $background-color;
+        svg {
+            transition: $short-animation-length;
+        }
 
         &:hover {
             border-color: $text-color;

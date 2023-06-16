@@ -33,6 +33,11 @@
 a {
     background-position: center;
     background-size: cover;
+    transition: transform $short-animation-length;
+    &:hover {
+        transform: scale(1.03);
+        transition: transform $short-animation-length;
+    }
 }
 span span {
     @include banner-highlight;
@@ -43,10 +48,16 @@ span span {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) saturate(80%);
+    -webkit-backdrop-filter: blur(3px) saturate(80%);
+    transition: backdrop-filter $animation-length, -webkit-backdrop-filter $animation-length;
+}
+a:hover .overlay {
+    backdrop-filter: blur(0) saturate(100%);
+    -webkit-backdrop-filter: blur(0) saturate(100%);
 }
 .title {
+    display: block;
     text-transform: uppercase;
     font-weight: 600;
     font-size: max(1rem, 2vw);
@@ -62,6 +73,7 @@ span span {
 }
 a:hover .title {
     color: #fc0047;
+    transition: $short-animation-length color;
 }
 .collaborator {
     display: block;

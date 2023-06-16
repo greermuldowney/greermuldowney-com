@@ -13,6 +13,7 @@ $minimum-side-padding: 1rem;
 $minimum-mobile-side-padding: .75rem;
 
 $animation-length: 0.2s;
+$short-animation-length: 100ms;
 
 @mixin banner-highlight($padding: .2em) {
     box-shadow: $padding 0 0 $background-color, -$padding 0 0 $background-color;

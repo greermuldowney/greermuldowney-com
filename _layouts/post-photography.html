@@ -15,9 +15,9 @@ og-type: article
 <div class="overlay"></div>
 </div>
 
+<div id="content">
 <div id="gallery">
-
-{% for photo in page.photos -%}
+{%- for photo in page.photos -%}
     <div>
         {%- if photo.filename -%}
         <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" data-index="image-{{ forloop.index }}" />
@@ -55,4 +55,5 @@ og-type: article
     </div>
 {%- endfor %}
 
+</div>
 </div>
