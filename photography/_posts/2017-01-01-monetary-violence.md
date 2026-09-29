@@ -32,3 +32,4 @@ Once a community defined by blue collar toughness, thriving ethnic enclaves, and
 
 Monetary Violence is an ongoing body of work attempting to weave a narrative between the ever-changing visual landscape of the city and its community players. Those moving to exploit the market, and those trying to preserve it from its eventual erasure. All of whom feel that the invasion of wealth is inevitable; where maybe the only answer is truth of power pretending to be progress. Though Somerville is a place of specificity, these images also serve as a similitude for many communities blighted by economic disparity.
 
+
