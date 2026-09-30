@@ -44,7 +44,6 @@ Editing files:
 * [Bio]({{ ghEdit }}bio.md){:target="_blank"}
 
 
-
 # Adding new projects
 
 Each project is structured like a blog post.
@@ -121,6 +120,8 @@ To prepare an AVIF image in Photoshop:
     * Color Fidelity: Format **4:4:4**, Depth **12-bit**
     * Metadata: **Include EXIF Metadata** is checked
     * Speed: **Slowest (Smallest)** (long time to export, but the file size is the smallest)
+
+You are aiming for around 300 KB per image.
 
 ## AVIF support
 
