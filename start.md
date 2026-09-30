@@ -41,7 +41,7 @@ Go to the directory that contains the text and metadata for each project:
 Editing files:
 
 * [Curriculum Vitae]({{ ghEdit }}cv.md){:target="_blank"}
-* [Bio]({{ ghEdit }}bio.md){:target="_blank"}
+* [About]({{ ghEdit }}about.md){:target="_blank"}
 
 
 # Adding new projects
