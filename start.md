@@ -217,6 +217,10 @@ Click [here]({{ ghEdit }}index.md){:target="_blank"}
 
 The home page showcases a random image as the background. You can update the set of images the site chooses from by editing the `random-images` property in the front matter of `index.md`. The image is assumed to exist under `assets/series/` so you only need to specify the directory from there.
 
+# Web analytics
+
+To see the web analytics for the website, go to [umami.is](https://umami.is).
+
 # About AVIF support
 
 According to Claude, global browser support is 95%.
