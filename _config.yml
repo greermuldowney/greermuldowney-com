@@ -27,7 +27,7 @@ twitter_username: GreerMuldowney
 linkedin_username: greer-muldowney-b92ab323
 instagram_username: greerest
 
-permalink: "/:categories/:title"
+permalink: "/:categories/:slug"
 
 # Build settings
 plugins:
