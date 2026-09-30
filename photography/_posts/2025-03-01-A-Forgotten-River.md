@@ -40,5 +40,5 @@ As a 21st century observer and longtime resident of this area, I have been photo
 Infrastructure improvements, prompted by growing concerns about climate change and larger floods, are finally bringing new investment to these areas—from the multi-million-dollar Poplar Street Pump Station to new water catchments in Union Square. Citizens have also started volunteer “de-paving” efforts across the city. An action that allows water to once again permeate the ground, alleviating the heat island effect that has risen the temperature in the overly paved city. As Somerville works to address problems created by generations of development and bad planning, I hope these photographs offer a subtle reminder of the waterways that once defined—and continue to shape– this terrain.
 
 
-This body of work was produced in consortium with the Charles River Composition Project, an initiative to gather photographers from across Greater Boston to research, document, and engage with the Charles River Watershed. 
+This body of work was produced in consortium with the [Charles River Composition Project](https://www.charlesrivercomposition.com/), an initiative to gather photographers from across Greater Boston to research, document, and engage with the Charles River Watershed. 
 
