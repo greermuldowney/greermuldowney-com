@@ -9,6 +9,9 @@ sitemap: false
     code { background-color: #fc004710;}
     code strong { background-color: #fc004718;}
     h1, h2, h3, h4, h5, h6 { margin-top: revert; margin-bottom: revert; }
+    table { border-collapse: collapse; }
+    td { padding: .1em 2em .1em 0; }
+    img { max-width: 30em; }
 </style>
 
 {%- assign ghEdit = "https://github.com/greermuldowney/greermuldowney-com/edit/main/" %}
@@ -21,30 +24,37 @@ Click below to jump to that section.
 * Contents
 {: toc}
 
-**QUICK TERMINOLOGY:** **Front matter** is the metadata in the top section of a post. It exists between two lines marked ```---```.
+# Quick Tips
 
-# Shortcuts
+* Terminology: **Front matter** is the metadata in the top section of a post. It exists between two lines marked ```---```.
+* If there's a piece of code in this guide that is confusing, look for examples of it in the repository by searching on GitHub:
 
-Click the links below to edit the file or go to the directory (GitHub login needed). When you are done, click on the green "Commit changes" button in the upper right hand side of the page.
+    ![GitHub search](/assets/img/start/github-search.jpg)
+
+# Quick Links into GitHub
+
+To edit a file in the GitHub browser, click on the pencil icon on the top right-hand area. When you are done, click on the green "Commit changes" button in the upper right hand side of the page.
+
+![GitHub edit file](/assets/img/start/github-edit-file.jpg)
 
 Changes you commit will trigger an immediate update to the entire site. It will take around a minute for the changes to be visible.
 
 To confirm that your changes are live, shift-click the reload button in your browser.
 
-Go to the directory that contains the text and metadata for each project:
+Click below to go to the directory that contains the text and metadata for each project:
 
 * [Photography]({{ ghTree }}photography/_posts){:target="_blank"}
 * [Collaborations]({{ ghTree }}collaborations/_posts){:target="_blank"}
 * [Curatorial & Projects]({{ ghTree }}curatorial/_posts){:target="_blank"}
 * [Commissions]({{ ghTree }}commissions/_posts){:target="_blank"}
 
-Editing files:
+Click below to directly edit the file:
 
+* [Home Page]({{ ghEdit }}index.md){:target="_blank"}
 * [Curriculum Vitae]({{ ghEdit }}cv.md){:target="_blank"}
 * [About]({{ ghEdit }}about.md){:target="_blank"}
 
-
-# Adding new projects
+# Adding a new project
 
 Each project is structured like a blog post.
 
@@ -79,6 +89,7 @@ Projects in the Curatorial section expect specific dates (month and day), as wel
 The post requires two pieces of information to show the images: the name of the directory where the images are, and an ordered list of the image file names.
 
 In the post's front matter:
+{: id="pdp"}
 
 1. Name the directory inside ```assets/series/``` where the photos are located:
     > <code>---<br/>
@@ -106,6 +117,18 @@ Adding a new directory in GitHub's UI is a little wonky. You have to upload the 
 
 If the ```photo-directory-prefix``` directory already exists, navigate there, and then upload the image files. Multiple images can be uploaded at once.
 
+# Formatting text
+
+Text is written in a format called Markdown. A quick cheat sheet is available [here](https://www.markdownguide.org/cheat-sheet/), but the most common things you will use:
+
+|Formatting|Markdown|
+|:-|:-|
+|*italicized text*|`*italicized text*`|
+|**bold text**|`**bold text**`|
+|[link to a website](https://photography.org)|`[link to a website](https://photography.org)`|
+|en dash: 2012--2014|`2012--2014`|
+|em dash: Hi---again|`Hi---again`|
+
 # Formatting images
 
 While JPG has been the historic format for compressed images, newer formats like WebP and AVIF are now supported in most modern browsers and devices. They have better compression ratios and higher-quality results.
@@ -123,7 +146,78 @@ To prepare an AVIF image in Photoshop:
 
 You are aiming for around 300 KB per image.
 
-## AVIF support
+# Editing a project
+
+Each project is structured like a blog post. The two terms are used interchangeably below.
+
+## Cover images
+
+By default the first image in the gallery is used. To use something else, add `preferred-splash-image` to the front matter.
+
+## Front matter
+
+The front matter contains metadata about the project, and it is used throughout the site and to create the image gallery. Below the front matter is the body text which serves as the description of the project.
+
+These are the top-level properties used in posts:
+
+> ```
+> title: REQUIRED
+> subtitle: optional
+> collaborator: optional
+> end-date: optional
+> 
+> photo-directory-prefix: REQUIRED
+> preferred-splash-image: optional
+> photos: REQUIRED
+>     - filename: REQUIRED
+>     - video-filename: REQUIRED
+>       placeholder-image: REQUIRED
+>     ...
+> ```
+
+* `title` and `subtitle` are self-explanatory. Straight quotes will automatically be turned into smart quotes.
+* `collaborator`: Include this if relevant.
+* `end-date`: This is used with the date of the post (listed in the filename) to create the date range for a project. In the Photography section it only lists the year, so the month and day do not matter. However, if you have multiple projects in a year, you can increment the month to force a specific order. Without this, the project is assumed to be open-ended, and has no end date.
+* `photo-directory-prefix`: This points to the subdirectory under `assets/series/` where the photos for the project exist. Make sure to include the ending slash, e.g. `photo-directory-prefix: cape-ann/`.
+* `photos`: This contains an indented list of all of the photos, to be displayed in order. If the photo is a video, use `video-filename` instead of `filename`.
+* `preferred-splash-image`: In the overview pages, the first photo in `photos` is used to represent the project. You can override that default here.
+
+For the Curatorial section there are these additional properties:
+
+> ```
+> location: REQUIRED
+> participants: optional
+>     what-are-they-called: REQUIRED
+>     who-are-they: REQUIRED
+>         - name: REQUIRED
+>           note: optional
+>           url: optional
+>         ...
+> ```
+
+* `location`: Where the exhibition or show was held.
+* `participants`: If you wish to list the participants, include this whole section.
+* `what-are-they-called`: The text used as the heading for this section. Examples: "Participants", "Featured Students"
+* `who-are-they`: The list of participants. Only the `name` is required. The `note` will be listed immediately after `name` in smaller text. The optional `url` will turn the `name` into a link. Make sure that the property names line up neatly with spaces.
+
+### Specifying the dates for a project
+
+For Photography, the year matters the most. If you have multiple projects in the same year, you can order them explicitly by using months later in the year.
+
+For Curatorial, the actual full dates are used.
+
+If the project has an end date, you specify that in the front matter. In the top section of the post, between the `---` section, add the `end-date` property. For Photography, the year
+
+# Editing other areas of the website
+
+## Home page
+
+Click [here]({{ ghEdit }}index.md){:target="_blank"}
+ to edit the home page.
+
+The home page showcases a random image as the background. You can update the set of images the site chooses from by editing the `random-images` property in the front matter of `index.md`. The image is assumed to exist under `assets/series/` so you only need to specify the directory from there.
+
+# About AVIF support
 
 According to Claude, global browser support is 95%.
 
@@ -152,3 +246,5 @@ For comparison, iOS 16 and macOS Ventura shipped in fall 2022. The affected grou
 How can I create a project but not have it public?
 : In the front matter, include the line ```published: false```. When you're ready to publish, remove that line.
 
+Images are not showing up.
+: Make sure the `photo-directory-prefix` [has a slash at the end](#pdp).
