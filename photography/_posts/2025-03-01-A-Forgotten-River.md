@@ -1,7 +1,6 @@
-
 ---
 title: A Forgotten River 
-photo-directory-prefix: forgotten-river
+photo-directory-prefix: ForgottenRiver/
 photos:
     - filename: Muldowney_ForgottenRiver_01.avif
     - filename: Muldowney_ForgottenRiver_02.avif
