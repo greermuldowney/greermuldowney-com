@@ -1,6 +1,6 @@
 ---
 title: Olmsted's Bicentennial
-subtitle: An Editorial for Yankeee Magazine
+subtitle: An Editorial for Yankee Magazine
 
 end-date: 2023-01-01
 photo-directory-prefix: Olmsted-Bicentennial/
