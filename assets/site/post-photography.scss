@@ -6,6 +6,9 @@
 $background-height: 50vw;
 $body-column-gap: .5rem;
 $caption-gap: .5rem;
+// Vertical room a mobile slide leaves around its content. svh is the visible
+// viewport with mobile browser toolbars showing; vh is the fallback.
+$mobile-slide-room: 2 * $minimum-mobile-side-padding;
 $slide-max-width: calc(100cqw - #{2 * $minimum-side-padding});
 $scroll-fade-mask: linear-gradient(to bottom, transparent, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent);
 
@@ -18,6 +21,14 @@ $scroll-fade-mask: linear-gradient(to bottom, transparent, #000 var(--fade-top),
     syntax: "<length>";
     inherits: false;
     initial-value: 0px;
+}
+
+@include breakpoint(mobile) {
+    // Settle on a slide when scrolling stops near one. Proximity, not
+    // mandatory, so the long text above the photos can still be scrolled.
+    html {
+        scroll-snap-type: y proximity;
+    }
 }
 
 body {
@@ -273,9 +284,12 @@ main {
             max-height: calc(100% - var(--caption-height, 0px) - #{$caption-gap});
             object-fit: fill;
             @include breakpoint(mobile) {
-                width: 100%;
-                max-width: none;
-                max-height: none;
+                // The image and its caption must fit in the viewport together.
+                // Narrower than the screen is fine; the image stays centered.
+                width: auto;
+                max-width: 100%;
+                max-height: calc(100vh - #{$mobile-slide-room} - var(--caption-height, 0px) - #{$caption-gap});
+                max-height: calc(100svh - #{$mobile-slide-room} - var(--caption-height, 0px) - #{$caption-gap});
             }
         }
     }
@@ -304,7 +318,8 @@ main {
         @include breakpoint(mobile) {
             width: 100%;
             height: auto;
-            max-height: calc(100vh - #{2 * $minimum-mobile-side-padding});
+            max-height: calc(100vh - #{$mobile-slide-room});
+            max-height: calc(100svh - #{$mobile-slide-room});
         }
         object-fit: contain;
         display: block;
