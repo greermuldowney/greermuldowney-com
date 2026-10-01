@@ -6,6 +6,7 @@ function onDocumentLoaded () {
     document.getElementById("slideshow").addEventListener("click", itemClicked);
     document.getElementById("gallery").addEventListener("click", goToImage);
     setUpScrollFade(document.querySelector("#slideshow article"));
+    setUpCaptions();
     setTimeout(() => { document.body.classList.add("page-loaded"); }, 100);
 }
 
@@ -26,6 +27,28 @@ function setUpScrollFade(el) {
     window.addEventListener("resize", update);
     window.addEventListener("load", update);
     update();
+}
+
+// Captioned slides need two things CSS can't work out itself: the image's
+// aspect ratio (so its box matches the picture exactly and object-fit can't
+// letterbox it) and the caption's height (which depends on how it wraps).
+function setUpCaptions() {
+    const heights = new ResizeObserver((entries) => {
+        entries.forEach((entry) => {
+            entry.target.parentElement.style.setProperty("--caption-height", `${entry.target.offsetHeight}px`);
+        });
+    });
+    document.querySelectorAll("#slideshow .has-caption").forEach((slide) => {
+        heights.observe(slide.querySelector(".caption"));
+        const media = slide.querySelector("img, video");
+        const setRatio = () => {
+            const ratio = (media.naturalWidth || media.videoWidth) / (media.naturalHeight || media.videoHeight);
+            if (ratio)
+                slide.style.setProperty("--ratio", ratio);
+        };
+        setRatio();
+        media.addEventListener(media.tagName == "VIDEO" ? "loadedmetadata" : "load", setRatio);
+    });
 }
 
 function itemClicked(e) {

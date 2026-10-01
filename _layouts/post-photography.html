@@ -46,12 +46,15 @@ og-type: article
     </article>
 
 {% for photo in page.photos -%}
-    <div>
+    <div{% if photo.notes %} class="has-caption"{% endif %}>
         {%- if photo.filename -%}
         <img src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.filename | relative_url }}" class="image-{{ forloop.index }}" />
         {%- elsif photo.video-filename -%}
         <video src="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.video-filename | relative_url }}" poster="{{ '/assets/series/' | append: page.photo-directory-prefix | append: photo.placeholder-image | relative_url }}" class="image-{{ forloop.index }}" controls />
         {%- endif -%}
+        {%- if photo.notes %}
+        <p class="caption">{{ photo.notes | strip | smartify }}</p>
+        {%- endif %}
     </div>
 {%- endfor %}
 

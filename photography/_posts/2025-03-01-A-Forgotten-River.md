@@ -3,11 +3,13 @@ title: A Forgotten River
 photo-directory-prefix: ForgottenRiver/
 photos:
     - filename: Muldowney_ForgottenRiver_01.avif
+      notes: Short note, landscape
     - filename: Muldowney_ForgottenRiver_02.avif
+      notes: Short note, portrait
     - filename: Muldowney_ForgottenRiver_03.avif
     - filename: Muldowney_ForgottenRiver_04.avif
     - filename: Muldowney_ForgottenRiver_05.avif
-      notes: Because of the over-paving, the site of potted gardens is common in Duck Village. 
+      notes: Because of the over-paving, the site of potted gardens is common in Duck Village.
     - filename: Muldowney_ForgottenRiver_06.avif
     - filename: Muldowney_ForgottenRiver_07.avif
       notes: The site of the Poplar Street Substation. This $113 million municipal project sits on top of the formerly flowing Millers river, and is designed to alleviate the decades long problem of flooding throughout half of the town of Somerville, MA, and the consequent sewage run-off. The pump station and associated 4-million-gallon stormwater storage tank are projected to be completed in 2027. 

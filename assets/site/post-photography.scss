@@ -5,6 +5,8 @@
 
 $background-height: 50vw;
 $body-column-gap: .5rem;
+$caption-gap: .5rem;
+$slide-max-width: calc(100cqw - #{2 * $minimum-side-padding});
 $scroll-fade-mask: linear-gradient(to bottom, transparent, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent);
 
 @property --fade-top {
@@ -119,6 +121,7 @@ main {
     scroll-snap-type: x mandatory;
 }
 #slideshow {
+    container-type: inline-size;
     display: flex;
 
     height: 100%;
@@ -239,6 +242,59 @@ main {
             max-width: initial;
             width: 100%;
             height: auto;
+        }
+    }
+
+    > div.has-caption {
+        // The image's box has exactly the picture's aspect ratio (--ratio),
+        // so object-fit never letterboxes it, and it's capped by the slide
+        // width and by the height the caption leaves (--caption-height). Both
+        // variables come from setUpCaptions() in gallery-navigation.js. The
+        // caps are concrete lengths on purpose: percentages here make
+        // Safari and Firefox size the slide from the caption alone and
+        // collapse the image. The pair is centered in the slide.
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(mobile) {
+            justify-content: flex-start;
+            // Extra room below so the caption reads as belonging to its own
+            // image rather than the next one.
+            margin-bottom: 1.5rem;
+        }
+
+        img, video {
+            flex: none;
+            width: auto;
+            height: auto;
+            aspect-ratio: var(--ratio, auto);
+            max-width: $slide-max-width;
+            max-height: calc(100% - var(--caption-height, 0px) - #{$caption-gap});
+            object-fit: fill;
+            @include breakpoint(mobile) {
+                width: 100%;
+                max-width: none;
+                max-height: none;
+            }
+        }
+    }
+
+    .caption {
+        // As wide as the text wants, up to the width of the gallery.
+        width: max-content;
+        max-width: $slide-max-width;
+        align-self: flex-end;
+        margin: $caption-gap 0 0;
+        font-size: .85em;
+        line-height: 1.4;
+        text-align: right;
+        text-wrap: balance;
+        @include breakpoint(mobile) {
+            width: auto;
+            max-width: none;
+            align-self: stretch;
+            text-align: center;
         }
     }
 
