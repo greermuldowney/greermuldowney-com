@@ -5,6 +5,18 @@
 
 $background-height: 50vw;
 $body-column-gap: .5rem;
+$scroll-fade-mask: linear-gradient(to bottom, transparent, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent);
+
+@property --fade-top {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+}
+@property --fade-bottom {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+}
 
 body {
     margin-right: 0;
@@ -140,6 +152,13 @@ main {
         align-self: center;
         overflow: scroll;
 
+        // Fade the text at an edge that has more content beyond it. The
+        // lengths are toggled by gallery-navigation.js (a pure-CSS shadow
+        // flashes when the element rubber-bands).
+        -webkit-mask-image: $scroll-fade-mask;
+        mask-image: $scroll-fade-mask;
+        transition: --fade-top $short-animation-length, --fade-bottom $short-animation-length;
+
         padding-left: $minimum-side-padding - $body-column-gap;
         @include breakpoint(mobile) {
             padding-left: 0;
@@ -151,6 +170,8 @@ main {
             scroll-snap-align: none;
             max-width: initial;
             max-height: initial;
+            -webkit-mask-image: none;
+            mask-image: none;
         }
     }
 

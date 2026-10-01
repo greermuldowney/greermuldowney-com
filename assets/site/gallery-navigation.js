@@ -5,7 +5,27 @@ function onDocumentLoaded () {
     document.querySelector("#gallery-navigation button.next").addEventListener("click", () => { scrollOver(1) });
     document.getElementById("slideshow").addEventListener("click", itemClicked);
     document.getElementById("gallery").addEventListener("click", goToImage);
+    setUpScrollFade(document.querySelector("#slideshow article"));
     setTimeout(() => { document.body.classList.add("page-loaded"); }, 100);
+}
+
+// Fades the edges of a scrollable element that have more content beyond them.
+// Overscroll (rubber-banding) yields out-of-range scrollTop values, which count
+// as "at the edge", so the fade doesn't flicker while bouncing.
+function setUpScrollFade(el) {
+    if (!el)
+        return;
+    const fade = "4rem";
+    const update = () => {
+        const atTop = el.scrollTop <= 0;
+        const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
+        el.style.setProperty("--fade-top", atTop ? "0px" : fade);
+        el.style.setProperty("--fade-bottom", atBottom ? "0px" : fade);
+    };
+    el.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    window.addEventListener("load", update);
+    update();
 }
 
 function itemClicked(e) {
