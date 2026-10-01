@@ -137,13 +137,13 @@ main {
 
     height: 100%;
     overflow-x: scroll;
-    gap: $minimum-side-padding;
+    gap: 4 * $minimum-side-padding;
     @include breakpoint(mobile) {
         height: auto;
         overflow-x: initial;
         scroll-snap-type: none;
         flex-direction: column;
-        gap: $minimum-mobile-side-padding;
+        gap: 4 * $minimum-mobile-side-padding;
     }
 
     > * {
@@ -270,9 +270,6 @@ main {
         align-items: center;
         @include breakpoint(mobile) {
             justify-content: flex-start;
-            // Extra room below so the caption reads as belonging to its own
-            // image rather than the next one.
-            margin-bottom: 1.5rem;
         }
 
         img, video {
