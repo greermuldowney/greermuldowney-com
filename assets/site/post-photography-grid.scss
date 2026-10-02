@@ -1,0 +1,50 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+// Test case for WebKit bug 325989. Loaded after post-photography.css and
+// replaces its captioned-slide layout with the grid-based version, which sizes
+// correctly in Chrome but not in Safari. Only used by
+// /webkit-testcase/monetary-violence-grid/.
+
+$slide-max-width: calc(100cqw - #{2 * $minimum-side-padding});
+
+#slideshow {
+    // Row 1 is the image's height, up to whatever the caption leaves, and the
+    // image fills it. When the image is width-limited, align-content centers
+    // the image-and-caption pair in the slide. No script measures the caption.
+    > div.has-caption {
+        display: grid;
+        grid-template-rows: minmax(0, max-content) auto;
+        align-content: center;
+        justify-items: center;
+        @include breakpoint(mobile) {
+            // Slides stack at their natural height on mobile.
+            display: block;
+        }
+
+        img, video {
+            min-height: 0;
+            width: auto;
+            height: auto;
+            aspect-ratio: var(--ratio, auto);
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: fill;
+            @include breakpoint(mobile) {
+                width: 100%;
+                max-height: none;
+            }
+        }
+    }
+
+    .caption {
+        max-width: $slide-max-width;
+        justify-self: end;
+        @include breakpoint(mobile) {
+            max-width: none;
+            justify-self: stretch;
+        }
+    }
+}

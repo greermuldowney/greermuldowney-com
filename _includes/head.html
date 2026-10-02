@@ -10,6 +10,9 @@
         {%- assign page-title = site.title -%}
     {%- endif -%}
     <title>{{ page-title }}</title>
+    {%- if page.noindex -%}
+    <meta name="robots" content="noindex">
+    {%- endif -%}
 
     {%- if page.meta-description -%}
     <meta name="description" content="{{ page.meta-description }}">
