@@ -1,7 +1,7 @@
 ---
 title: How's The Weather?
 collaborator: David Greer 
-end-date: 06/24/2023-01/01/2024
+end-date: 01/01/2024
 photo-directory-prefix: Hows-the-weather/
 preferred-splash-image: Weather_01.avif
 photos:
