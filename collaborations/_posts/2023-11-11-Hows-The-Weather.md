@@ -6,9 +6,9 @@ photo-directory-prefix: hows-the-weather/
 preferred-splash-image: Weather_01.avif
 photos:
     - filename: Weather_01.avif
-      Note: Greer Muldowney's Accordion Cover
+      notes: Greer Muldowney's Accordion Cover
     - filename: Weather_02.avif
-      Note: © Greer Muldowney 
+      notes: © Greer Muldowney 
     - filename: Weather_03.avif
     - filename: Weather_04.avif
       Note: © David Greer 
