@@ -15,6 +15,7 @@ photos:
     - filename: Weather_05.avif
       notes: © David Greer 
     - filename: Weather_06.avif
+      notes: Dave Greer's Accordion
     - filename: Weather_07.avif
       notes: © David Greer 
     - filename: Weather_08.avif
