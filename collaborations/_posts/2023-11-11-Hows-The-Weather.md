@@ -29,5 +29,7 @@ This collaborative work is a shared reverie between David’s garden in Vallejo,
 
 
 "How's the Weather, David Greer?"
+
 "How's the Weather, Greer Muldowney?"
+
 6"x4.75", 8 pages, double sided accordion 
