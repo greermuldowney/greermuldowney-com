@@ -10,8 +10,9 @@ photos:
     - filename: Weather_02.avif
       notes: © Greer Muldowney 
     - filename: Weather_03.avif
+      notes: Greer Muldowney's Accordion
     - filename: Weather_04.avif
-      notes: © David Greer 
+      notes: © Greer Muldowney 
     - filename: Weather_05.avif
       notes: © David Greer 
     - filename: Weather_06.avif
