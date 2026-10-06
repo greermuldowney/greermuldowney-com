@@ -11,12 +11,12 @@ photos:
       notes: © Greer Muldowney 
     - filename: Weather_03.avif
     - filename: Weather_04.avif
-      Note: © David Greer 
+      notes: © David Greer 
     - filename: Weather_05.avif
-      Note: © David Greer 
+      notes: © David Greer 
     - filename: Weather_06.avif
     - filename: Weather_07.avif
-      Note: © David Greer 
+      notes: © David Greer 
     - filename: Weather_08.avif
 ---
 
