@@ -13,7 +13,7 @@ photos:
       notes: © Kristen Mallia 
 ---
 
-This collaboration is an updated version of [Tim Devin's](https://timdevin.com/otherpeopleshomes.html) essay and zine about house flipping and the condominium conversion market in Somerville, Massachusetts since the early 2000's. Now issued with photographs of original locations by Greer Muldowney, and redesigned by [Kristen Mallia](https://www.rarevaluables.net/), the essay paints a vivid picture of how development and speculation can stress a tight real estate market. 
+This collaboration is an updated version of [Tim Devin's](https://timdevin.com/otherpeopleshomes.html) essay and zine about house flipping and the condominium conversion market in Somerville, Massachusetts since the early 2000's. Now issued with photographs of original locations by Greer Muldowney and redesigned by [Kristen Mallia](https://www.rarevaluables.net/), the essay paints a vivid picture of how development and speculation can stress a tight real estate market. 
 
 "Buying and Selling Other Peoples' Homes"
 
