@@ -1,37 +1,22 @@
 ---
-title: How's The Weather?
-collaborator: David Greer 
+title: Buying and Selling Other Peoples' Homes
+collaborator: Tim Devin & Kristen Mallia 
 end-date: 2024-01-01
-photo-directory-prefix: hows-the-weather/
-preferred-splash-image: Weather_09.avif
+photo-directory-prefix: buying-and-selling/
+preferred-splash-image: Buying_Selling_01.avif
 photos:
-    - filename: Weather_01.avif
-    - filename: Weather_09.avif
-      notes: Greer Muldowney's Accordion Cover
-    - filename: Weather_02.avif
-      notes: © Greer Muldowney 
-    - filename: Weather_03.avif
-      notes: Greer Muldowney's Accordion
-    - filename: Weather_04.avif
-      notes: © Greer Muldowney 
-    - filename: Weather_05.avif
-      notes: © David Greer 
-    - filename: Weather_06.avif
-      notes: David Greer's Accordion
-    - filename: Weather_07.avif
-      notes: © David Greer 
-    - filename: Weather_08.avif
+    - filename: Buying_Selling_01.avif
+    - filename: Buying_Selling_02.avif
+    - filename: Buying_Selling_03.avif
+    - filename: Buying_Selling_04.avif
+    - filename: Buying_Selling_05.mov
+      notes: © Kristen Mallia 
 ---
 
-[David Greer](https://davidgreer.cc/01) and I have been good friends since 2010, but have never lived in the same city since working together in Hong Kong. We’ve helped each other weather relationships, family deaths, bad jobs and countless fly-by reunions over the years, staying close through pictures, politics and a similar sense of careening out of control when the world seems spectacularly unfair and disjointed. We also share a similar comfort and turmoil in making things grow. 
+This collaboration is an updated version of [Tim Devin's](https://timdevin.com/otherpeopleshomes.html) essay and zine about house flipping and the condominium conversion market in Somerville, Massachusetts since the early 2000's. Now issued with photographs of original locations by Greer Muldowney, and redesigned by [Kristen Mallia](https://www.rarevaluables.net/), the essay paints a vivid picture of how development and speculation can stress a tight real estate market. 
 
-During times of quiet or tension between us, communication boils down to a shared picture, often of our respective gardens. Where words and control of a situation have failed us, finding ourselves humbled or triumphant in our respective gardens has brought us back to our senses, and often our friendship. Back to a small peace that cannot otherwise be found in news headlines or in the chaos of our daily lives. 
+"Buying and Selling Other Peoples' Homes"
 
-This collaborative work is a shared reverie between David’s garden in Vallejo, CA and mine in Somerville, MA during the growing season of 2023. This work was originally produced in a small-run, handmade book.
+Original text by Tim Devin, updated in 2023
 
-
-"How's the Weather, David Greer?"
-
-"How's the Weather, Greer Muldowney?"
-
-6"x4.75", 8 pages, double sided accordion 
+8.5"x5.5", 36 pages with 2 vellum inserts, full color 
