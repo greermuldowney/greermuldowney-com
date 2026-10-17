@@ -3,9 +3,10 @@ title: How's The Weather?
 collaborator: David Greer 
 end-date: 2024-01-01
 photo-directory-prefix: hows-the-weather/
-preferred-splash-image: Weather_01.avif
+preferred-splash-image: Weather_09.avif
 photos:
     - filename: Weather_01.avif
+    - filename: Weather_09.avif
       notes: Greer Muldowney's Accordion Cover
     - filename: Weather_02.avif
       notes: © Greer Muldowney 
